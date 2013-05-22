@@ -1,0 +1,31 @@
+<com.laclife.ui.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <Button
+        android:id="@+id/btnMyLAC"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="@string/btn_my_lac_life" />
+
+    <Button
+        android:id="@+id/btnProducts"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="@string/btn_products" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="@string/btn_contact_us" />
+
+    <Button
+        android:id="@+id/btnUtilities"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="@string/btn_utilities" />
+
+</com.laclife.ui.DashboardLayout>

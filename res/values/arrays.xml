@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="productsArray">
+        <item>Leadway Savings Plan</item>
+        <item>Leadway Target Plan</item>
+        <item>Education Policy Product</item>
+        <item>Education Savings Plan</item>
+        <item>Leadway Family Plan</item>
+        <item>Comfort 5</item>
+    </string-array>
+
+</resources>
