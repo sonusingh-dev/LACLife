@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="productsArray">
+    <string-array name="products_array">
         <item>Leadway Savings Plan</item>
         <item>Leadway Target Plan</item>
         <item>Education Policy Product</item>
@@ -9,14 +9,28 @@
         <item>Leadway Family Plan</item>
         <item>Comfort 5</item>
     </string-array>
-    
-    <string-array name="quoteArray">
+    <string-array name="sort_products_array">
         <item>LSP</item>
         <item>LTP</item>
         <item>EPP</item>
         <item>ESP</item>
         <item>LFP</item>
         <item>Comfort 5</item>
+    </string-array>
+    <string-array name="covder_period_array">
+        <item>5 years</item>
+        <item>10 years</item>
+        <item>15 years</item>
+        <item>20 years</item>
+    </string-array>
+    <string-array name="pay_frequency_array">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>        
     </string-array>
 
 </resources>

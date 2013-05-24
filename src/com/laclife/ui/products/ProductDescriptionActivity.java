@@ -5,35 +5,42 @@ import java.util.List;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.laclife.Constant.Products;
+import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
 
 public class ProductDescriptionActivity extends HomeBaseActivity implements
 		OnClickListener {
 
+	// private String product;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_product_description);
+
+		String productQuote = ((LACLifeApplication) getApplication())
+				.getProduct();
+		setActionBarTitle(productQuote);
 
 		String product = getIntent().getStringExtra(Products.NAME);
-		setActionBarTitle(product);
-
-		setContentView(R.layout.activity_product_description);
 
 		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
 
 		Button btnGetQuote = (Button) findViewById(R.id.btnGetQuote);
 		Button btnMailUs = (Button) findViewById(R.id.btnMailUs);
-		
+
 		btnGetQuote.setOnClickListener(this);
 		btnMailUs.setOnClickListener(this);
-		
-		txtTitle.setText(getString(R.string.des_your_contact_details));
+
+		txtTitle.setText(R.string.dec_leadway_life);
+		txtTitle.setGravity(Gravity.CENTER_HORIZONTAL);
 	}
 
 	@Override
@@ -41,6 +48,7 @@ public class ProductDescriptionActivity extends HomeBaseActivity implements
 		int id = view.getId();
 		switch (id) {
 		case R.id.btnGetQuote:
+			// ((LACLifeApplication) getApplication()).setProductQuote(product);
 			Intent intent = new Intent(this, ContactDetailsActivity.class);
 			startActivity(intent);
 

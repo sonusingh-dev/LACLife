@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.laclife.Constant.Products;
+import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
 
 public class ProductsActivity extends HomeBaseActivity implements
@@ -21,7 +22,7 @@ public class ProductsActivity extends HomeBaseActivity implements
 
 		ListView listView = (ListView) findViewById(R.id.listView);
 		listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row_item_1,
-				getResources().getStringArray(R.array.productsArray)));
+				getResources().getStringArray(R.array.products_array)));
 
 		listView.setOnItemClickListener(this);
 	}
@@ -29,7 +30,12 @@ public class ProductsActivity extends HomeBaseActivity implements
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		String product = getResources().getStringArray(R.array.quoteArray)[position];
+		String product = getResources().getStringArray(R.array.products_array)[position];
+		String sortPproduct = getResources().getStringArray(R.array.sort_products_array)[position];
+		
+		((LACLifeApplication) getApplication()).setProduct(sortPproduct);
+		((LACLifeApplication) getApplication()).setProductQuote();
+						
 		Intent intent = new Intent(this, ProductDescriptionActivity.class);
 		intent.putExtra(Products.NAME, product);
 		startActivity(intent);

@@ -1,6 +1,8 @@
 package com.laclife.ui;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
@@ -23,9 +25,28 @@ public class BaseActivity extends SherlockActivity {
 	}
 
 	// set background image for ActionBar
-	protected void setActionBarTitle(int drawable) {
+	protected void setActionBarBackground(int drawable) {
 		ActionBar actionBar = getSupportActionBar();
 		actionBar.setBackgroundDrawable(getResources().getDrawable(drawable));
+	}
+
+	// set background image for ActionBar
+	protected void setActionBarBackgroundColor(int color) {
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setBackgroundDrawable(getResources().getDrawable(color));
+	}
+
+	public void shortToast(String text) {
+		Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT)
+				.show();
+	}
+
+	protected void longToast(String text) {
+		Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
+	}
+
+	public void log(Object msg) {
+		Log.d(getClass().getCanonicalName(), "" + msg);
 	}
 
 	@Override

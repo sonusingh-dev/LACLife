@@ -4,6 +4,11 @@
     <string name="app_name">LAC Life</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Title -->
+    <string name="title_code_sent">Code Sent!</string>
+    <string name="title_quote_sent">Quote Sent!</string>
+    <string name="title_select_gender">Select Gender</string>
+
     <!-- Button Label -->
     <string name="btn_my_lac_life">My LAC Life</string>
     <string name="btn_products">Products</string>
@@ -21,7 +26,7 @@
     <string name="hint_phone_">Phone #</string>
     <string name="hint_email">Email</string>
     <string name="hint_date_of_birth">Date of birth</string>
-    <string name="hint_sum_insured">Sum insured</string>
+    <string name="hint_desired_savings">Desired yearly savings</string>
 
     <!-- Text Label -->
     <string name="txt_male">Male</string>
@@ -29,10 +34,21 @@
     <string name="txt_payment_frequency">Payment frequency</string>
     <string name="txt_cover_period">Cover period</string>
     <string name="txt_desired_savings">Desired yearly savings</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_sum_insured">Sum insured</string>
 
     <!-- Description -->
     <string name="des_your_contact_details">Your contact details</string>
-    <string name="des_tell_us_how">Tell us how much you wish to save</string>
+    <string name="des_tell_us_how_">Tell us how much you wish to save</string>
+    <string name="des_add_risk_to_">Add a risk to your plan</string>
+    <string name="des_verify_number_">Please verify your number</string>
+    <string name="des_your_quote">Your quote</string>
     <string name="des_enter_the_code_">Enter the code sent to your phone in the field below to get the quote</string>
+
+    <!-- Alert -->
+    <string name="alert_code_sent">A verification code has been sent to your phone. Please enter code on the next screen</string>
+    <string name="alert_quote_sent">A copy of this quote has been sent to your email address</string>
+    <string name="btn_select_gender">Select Gender</string>
+    <string name="dec_leadway_life">Leadway Life</string>
 
 </resources>

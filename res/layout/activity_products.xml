@@ -1,13 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BaseLayout"
-    android:paddingLeft="10dip"
-    android:paddingRight="10dip" >
+    style="@style/BaseLayout" >
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:divider="@android:color/black"
+        android:divider="@color/separator_background"
         android:dividerHeight="1dip" >
     </ListView>
 

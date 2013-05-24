@@ -11,13 +11,12 @@
         style="@style/SimpleTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:layout_marginBottom="6dp"
         android:text="@string/des_enter_the_code_" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="5"
         android:inputType="number" >
@@ -26,16 +25,16 @@
     </EditText>
 
     <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnGetQuote"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="@string/btn_get_quote" />
 
     <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnResendCode"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"

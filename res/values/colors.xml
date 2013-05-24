@@ -16,6 +16,8 @@
 
 <resources>
 
+    <color name="title_primary_color">#DE6647</color>
+    <color name="title_secondary_color">#CB865A</color>
     <color name="scn_background_color">#f8f9fe</color>
     <color name="text_gray">#555555</color>
     <color name="text_pink">#DE2E69</color>
