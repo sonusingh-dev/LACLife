@@ -16,6 +16,26 @@
 
 <resources>
 
+    <color name="scn_background_color">#f8f9fe</color>
+    <color name="text_gray">#555555</color>
+    <color name="text_pink">#DE2E69</color>
+    <color name="profile_background">#F2F1F1</color>
+    <color name="separator_background">#FFcccccc</color>
+    <color name="slidemenu_background"> #646464</color>
+    <color name="slidemenu_separator"> #434343</color>
+    <color name="slidemenu_separator_view"> #505050</color>
+    <color name="background">#E3E3E3</color>
+
+    <!-- Dialog f1f1f1 -->
+    <color name="dilog_title"> #33B5E5</color>
+    <color name="red_tint">#88FF0000</color>
+    <color name="blue_tint">#880000FF</color>
+    <color name="yellow_tint">#88FFFF00</color>
+    <color name="purple_tint">#88995f86</color>
+    <color name="orange_tint">#aaffbf00</color>
+    <color name="magenta_tint">#88ff33cc</color>
+
+    <!--
     <color name="actionbar_title_color">#224894</color>
     <color name="abs__background_holo_dark">#ff000000</color>
     <color name="abs__background_holo_light">#fff3f3f3</color>
@@ -26,5 +46,6 @@
     <color name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</color>
     <color name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</color>
     <color name="abs__holo_blue_light">#ff33b5e5</color>
+    -->
 
 </resources>

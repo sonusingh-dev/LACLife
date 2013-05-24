@@ -10,6 +10,7 @@ package com.laclife.ui;
 public final class R {
     public static final class array {
         public static final int productsArray=0x7f0b0000;
+        public static final int quoteArray=0x7f0b0001;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -688,11 +689,28 @@ containing a value of this type.
         public static final int abs__bright_foreground_inverse_holo_dark=0x7f060006;
         public static final int abs__bright_foreground_inverse_holo_light=0x7f060007;
         public static final int abs__holo_blue_light=0x7f060008;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f06000a;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f06000b;
-        public static final int abs__primary_text_holo_dark=0x7f06000c;
-        public static final int abs__primary_text_holo_light=0x7f06000d;
-        public static final int actionbar_title_color=0x7f060009;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f060019;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f06001a;
+        public static final int abs__primary_text_holo_dark=0x7f06001b;
+        public static final int abs__primary_text_holo_light=0x7f06001c;
+        public static final int background=0x7f060011;
+        public static final int blue_tint=0x7f060014;
+        /**  Dialog f1f1f1 
+         */
+        public static final int dilog_title=0x7f060012;
+        public static final int magenta_tint=0x7f060018;
+        public static final int orange_tint=0x7f060017;
+        public static final int profile_background=0x7f06000c;
+        public static final int purple_tint=0x7f060016;
+        public static final int red_tint=0x7f060013;
+        public static final int scn_background_color=0x7f060009;
+        public static final int separator_background=0x7f06000d;
+        public static final int slidemenu_background=0x7f06000e;
+        public static final int slidemenu_separator=0x7f06000f;
+        public static final int slidemenu_separator_view=0x7f060010;
+        public static final int text_gray=0x7f06000a;
+        public static final int text_pink=0x7f06000b;
+        public static final int yellow_tint=0x7f060015;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -816,6 +834,13 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f070011;
         public static final int activity_vertical_margin=0x7f070012;
+        public static final int text_size_large=0x7f070016;
+        public static final int text_size_medium=0x7f070015;
+        public static final int text_size_normal=0x7f070014;
+        /**  Text Size 
+         */
+        public static final int text_size_small=0x7f070013;
+        public static final int title_text_size=0x7f070017;
     }
     public static final class drawable {
         public static final int abs__ab_bottom_solid_dark_holo=0x7f020000;
@@ -972,21 +997,44 @@ containing a value of this type.
         public static final int abs__title=0x7f04001b;
         public static final int abs__titleDivider=0x7f04001c;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f040038;
-        public static final int btnContactUs=0x7f040035;
-        public static final int btnMyLAC=0x7f040033;
-        public static final int btnProducts=0x7f040034;
-        public static final int btnUtilities=0x7f040036;
+        public static final int action_settings=0x7f04004f;
+        public static final int btnContactUs=0x7f040045;
+        public static final int btnGetQuote=0x7f040038;
+        public static final int btnMailUs=0x7f04004a;
+        public static final int btnMyLAC=0x7f040043;
+        public static final int btnNext=0x7f040042;
+        public static final int btnProducts=0x7f040044;
+        public static final int btnUtilities=0x7f040046;
+        public static final int chkRiskOption=0x7f040034;
         public static final int disableHome=0x7f040009;
+        public static final int editText1=0x7f040048;
         public static final int edit_query=0x7f040027;
+        public static final int edtAmount=0x7f040037;
+        public static final int edtBirthday=0x7f04003e;
+        public static final int edtEmail=0x7f04003d;
+        public static final int edtFName=0x7f04003a;
+        public static final int edtLName=0x7f04003b;
+        public static final int edtPhone=0x7f04003c;
         public static final int homeAsUp=0x7f040006;
+        public static final int horizontalScrollView1=0x7f04004b;
         public static final int listMode=0x7f040002;
-        public static final int listView=0x7f040037;
+        public static final int listView=0x7f04004c;
         public static final int normal=0x7f040001;
+        public static final int radFemale=0x7f040041;
+        public static final int radMale=0x7f040040;
+        public static final int ragGender=0x7f04003f;
+        public static final int scrollView1=0x7f040039;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
+        public static final int spnCover=0x7f04004d;
+        public static final int spnPayment=0x7f04004e;
         public static final int tabMode=0x7f040003;
+        public static final int txtDescription=0x7f040047;
+        public static final int txtRiskDescription=0x7f040036;
+        public static final int txtRiskName=0x7f040035;
+        public static final int txtRiskOption=0x7f040033;
+        public static final int txtTitle=0x7f040049;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -1018,11 +1066,20 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030015;
         public static final int abs__simple_dropdown_hint=0x7f030016;
         public static final int actionbar_layout=0x7f030017;
-        public static final int activity_home=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001a;
-        public static final int sherlock_spinner_item=0x7f03001b;
-        public static final int view_listview=0x7f03001c;
+        public static final int activity_add_risk=0x7f030018;
+        public static final int activity_contact_details=0x7f030019;
+        public static final int activity_home=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int activity_number_verification=0x7f03001c;
+        public static final int activity_product_description=0x7f03001d;
+        public static final int activity_products=0x7f03001e;
+        public static final int activity_savings_amount=0x7f03001f;
+        public static final int layout_divider=0x7f030020;
+        public static final int layout_title=0x7f030021;
+        public static final int row_item_1=0x7f030022;
+        public static final int row_risk_item=0x7f030023;
+        public static final int sherlock_spinner_dropdown_item=0x7f030024;
+        public static final int sherlock_spinner_item=0x7f030025;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1075,11 +1132,37 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f090009;
         public static final int action_settings=0x7f090010;
         public static final int app_name=0x7f09000f;
-        public static final int btn_contact_us=0x7f090014;
-        public static final int btn_my_lac_life=0x7f090012;
-        public static final int btn_products=0x7f090013;
-        public static final int btn_utilities=0x7f090015;
-        public static final int hello_world=0x7f090011;
+        public static final int btn_contact_us=0x7f090013;
+        public static final int btn_get_a_quote=0x7f090015;
+        public static final int btn_get_quote=0x7f090016;
+        public static final int btn_mail_us=0x7f090017;
+        /**  Button Label 
+         */
+        public static final int btn_my_lac_life=0x7f090011;
+        public static final int btn_next=0x7f090018;
+        public static final int btn_products=0x7f090012;
+        public static final int btn_resend_code=0x7f090019;
+        public static final int btn_utilities=0x7f090014;
+        public static final int des_enter_the_code_=0x7f090027;
+        public static final int des_tell_us_how=0x7f090026;
+        /**  Description 
+         */
+        public static final int des_your_contact_details=0x7f090025;
+        public static final int hint_date_of_birth=0x7f09001e;
+        public static final int hint_email=0x7f09001d;
+        /**  Hint 
+         */
+        public static final int hint_first_name=0x7f09001a;
+        public static final int hint_last_name=0x7f09001b;
+        public static final int hint_phone_=0x7f09001c;
+        public static final int hint_sum_insured=0x7f09001f;
+        public static final int txt_cover_period=0x7f090023;
+        public static final int txt_desired_savings=0x7f090024;
+        public static final int txt_female=0x7f090021;
+        /**  Text Label 
+         */
+        public static final int txt_male=0x7f090020;
+        public static final int txt_payment_frequency=0x7f090022;
     }
     public static final class style {
         public static final int ActionBarCompat=0x7f0a005b;
@@ -1109,7 +1192,8 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0a005a;
-        public static final int DashboardButton=0x7f0a005c;
+        public static final int BaseLayout=0x7f0a005c;
+        public static final int DashboardButton=0x7f0a005e;
         public static final int DialogWindowTitle_Sherlock=0x7f0a0036;
         public static final int DialogWindowTitle_Sherlock_Light=0x7f0a0037;
         public static final int Sherlock___TextAppearance_Small=0x7f0a004a;
@@ -1124,6 +1208,7 @@ containing a value of this type.
         public static final int Sherlock___Widget_Holo_ListView=0x7f0a0026;
         public static final int Sherlock___Widget_Holo_Spinner=0x7f0a0023;
         public static final int Sherlock___Widget_SearchAutoCompleteTextView=0x7f0a0033;
+        public static final int SimpleTextColor=0x7f0a005d;
         public static final int TextAppearance_Sherlock_DialogWindowTitle=0x7f0a0048;
         public static final int TextAppearance_Sherlock_Light_DialogWindowTitle=0x7f0a0049;
         public static final int TextAppearance_Sherlock_Light_Small=0x7f0a004c;

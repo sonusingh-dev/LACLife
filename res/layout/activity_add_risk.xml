@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtRiskOption"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Option"
+            android:textSize="@dimen/text_size_small" />
+
+        <CheckBox
+            android:id="@+id/chkRiskOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskOption"
+            android:checked="true"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/txtRiskName"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Name" />
+
+        <TextView
+            android:id="@+id/txtRiskDescription"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtRiskName"
+            android:layout_toLeftOf="@id/chkRiskOption"
+            android:text="Risk Description"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskDescription"
+            android:ems="6"
+            android:enabled="false"
+            android:hint="@string/hint_sum_insured"
+            android:inputType="number" >
+        </EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtRiskOption"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Option"
+            android:textSize="@dimen/text_size_small" />
+
+        <CheckBox
+            android:id="@+id/chkRiskOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskOption"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/txtRiskName"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Name" />
+
+        <TextView
+            android:id="@+id/txtRiskDescription"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtRiskName"
+            android:layout_toLeftOf="@id/chkRiskOption"
+            android:text="Risk Description"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskDescription"
+            android:ems="6"
+            android:enabled="false"
+            android:hint="@string/hint_sum_insured"
+            android:inputType="number" >
+        </EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtRiskOption"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Option"
+            android:textSize="@dimen/text_size_small" />
+
+        <CheckBox
+            android:id="@+id/chkRiskOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskOption"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/txtRiskName"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Risk Name" />
+
+        <TextView
+            android:id="@+id/txtRiskDescription"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtRiskName"
+            android:layout_toLeftOf="@id/chkRiskOption"
+            android:text="Risk Description"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtRiskDescription"
+            android:ems="6"
+            android:hint="@string/hint_sum_insured"
+            android:inputType="number" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnGetQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_get_quote" />
+
+</LinearLayout>

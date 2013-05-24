@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/txtRiskOption"
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Risk Option"
+        android:textSize="@dimen/text_size_small" />
+
+    <CheckBox
+        android:id="@+id/chkRiskOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtRiskOption"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/txtRiskName"
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Risk Name" />
+
+    <TextView
+        android:id="@+id/txtRiskDescription"
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtRiskName"
+        android:layout_toLeftOf="@id/chkRiskOption"
+        android:text="Risk Description"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtRiskDescription"
+        android:ems="6"
+        android:enabled="false"
+        android:hint="@string/hint_sum_insured"
+        android:inputType="number" >
+    </EditText>
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -24,13 +24,24 @@
         <item name="android:background">@color/abs__background_holo_dark</item>
     </style>
 
+    <style name="BaseLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="SimpleTextColor">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
     <style name="DashboardButton">
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:drawablePadding">2dp</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
         <item name="android:background">@null</item>
     </style>
 

@@ -9,5 +9,14 @@
         <item>Leadway Family Plan</item>
         <item>Comfort 5</item>
     </string-array>
+    
+    <string-array name="quoteArray">
+        <item>LSP</item>
+        <item>LTP</item>
+        <item>EPP</item>
+        <item>ESP</item>
+        <item>LFP</item>
+        <item>Comfort 5</item>
+    </string-array>
 
 </resources>

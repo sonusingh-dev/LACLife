@@ -3,10 +3,36 @@
 
     <string name="app_name">LAC Life</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+
+    <!-- Button Label -->
     <string name="btn_my_lac_life">My LAC Life</string>
     <string name="btn_products">Products</string>
     <string name="btn_contact_us">Contact us</string>
     <string name="btn_utilities">Utilities</string>
+    <string name="btn_get_a_quote">Get a quote</string>
+    <string name="btn_get_quote">Get quote</string>
+    <string name="btn_mail_us">Mail us</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_resend_code">Resend code</string>
+
+    <!-- Hint -->
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_phone_">Phone #</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_date_of_birth">Date of birth</string>
+    <string name="hint_sum_insured">Sum insured</string>
+
+    <!-- Text Label -->
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_payment_frequency">Payment frequency</string>
+    <string name="txt_cover_period">Cover period</string>
+    <string name="txt_desired_savings">Desired yearly savings</string>
+
+    <!-- Description -->
+    <string name="des_your_contact_details">Your contact details</string>
+    <string name="des_tell_us_how">Tell us how much you wish to save</string>
+    <string name="des_enter_the_code_">Enter the code sent to your phone in the field below to get the quote</string>
 
 </resources>
