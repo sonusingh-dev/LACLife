@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_reg_user" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/des_leadway_life"
+        android:textColor="@color/title_primary_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/descri_for_this_step_you_will_"
+        android:textSize="@dimen/text_size_small" />
+
+    <Button
+        android:id="@+id/btnBegin"
+        style="@style/DefaultYellowButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_begin" />
+
+</LinearLayout>

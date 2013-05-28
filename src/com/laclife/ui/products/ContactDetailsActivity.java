@@ -23,7 +23,7 @@ import com.laclife.ui.R;
 public class ContactDetailsActivity extends HomeBaseActivity implements
 		OnClickListener {
 
-	private final static int DATE_DIALOG_ID = 999;
+	private final static int DATE_DIALOG_ID = 78;
 
 	private int mYear;
 	private int mMonth;
@@ -56,15 +56,12 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 
 		btnGender = (TextView) findViewById(R.id.btnGender);
 
-		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
-
 		Button btnNext = (Button) findViewById(R.id.btnNext);
 
 		edtBirthday.setOnClickListener(this);
 		btnGender.setOnClickListener(this);
 		btnNext.setOnClickListener(this);
 
-		txtTitle.setText(R.string.des_your_contact_details);
 	}
 
 	@Override

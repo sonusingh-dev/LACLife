@@ -4,7 +4,13 @@
     android:orientation="vertical"
     android:padding="10dp" >
 
-    <include layout="@layout/layout_title" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/des_verify_number_"
+        android:textColor="@color/title_primary_color"
+        android:textSize="@dimen/title_text_size" />
 
     <TextView
         android:id="@+id/txtDescription"
@@ -16,9 +22,11 @@
 
     <EditText
         android:id="@+id/editText1"
+        style="@style/SimpleTextColor"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:ems="5"
+        android:ems="10"
+        android:hint="@string/hint_enter_the_verification_code"
         android:inputType="number" >
 
         <requestFocus />
@@ -26,16 +34,14 @@
 
     <Button
         android:id="@+id/btnGetQuote"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/DefaultYellowButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="@string/btn_get_quote" />
 
     <Button
         android:id="@+id/btnResendCode"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/DefaultYellowButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:text="@string/btn_resend_code" />

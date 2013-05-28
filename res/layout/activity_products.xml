@@ -5,7 +5,7 @@
         android:id="@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:divider="@color/separator_background"
+        android:divider="@color/separator_color"
         android:dividerHeight="1dip" >
     </ListView>
 

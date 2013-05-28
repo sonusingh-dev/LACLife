@@ -3,7 +3,15 @@
     android:orientation="vertical"
     android:padding="10dp" >
 
-    <include layout="@layout/layout_title" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/des_add_risk_to_"
+        android:textColor="@color/title_primary_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <include layout="@layout/layout_divider" />
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -12,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <RelativeLayout
@@ -22,42 +30,42 @@
                 android:paddingTop="10dp" >
 
                 <TextView
-                    android:id="@+id/txtRiskOption"
+                    android:id="@+id/txtRiskOption1"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:text="Mandatory"
+                    android:text="@string/txt_mandatory"
                     android:textColor="@color/title_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtRiskName"
+                    android:id="@+id/txtRiskName1"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:text="Risk Name" />
+                    android:text="@string/title_life_term_insurance" />
 
                 <TextView
-                    android:id="@+id/txtRiskDescription"
+                    android:id="@+id/txtRiskDescription1"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskName"
-                    android:text="Risk Description"
+                    android:layout_below="@id/txtRiskName1"
+                    android:text="@string/descri_provides_a_chosen_cash_amount_"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtSumInsured"
+                    android:id="@+id/txtSumInsured1"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskDescription"
+                    android:layout_below="@id/txtRiskDescription1"
                     android:text="@string/txt_sum_insured"
                     android:textColor="@color/title_secondary_color" />
 
@@ -67,12 +75,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtSumInsured"
-                    android:layout_toLeftOf="@+id/chkRiskOption"
+                    android:layout_below="@id/txtSumInsured1"
+                    android:layout_toLeftOf="@+id/chkRiskOption1"
                     android:ems="10"
                     android:enabled="false"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_sum_insured"
                     android:inputType="number" >
                 </EditText>
 
@@ -80,8 +87,8 @@
                     android:id="@+id/chkRiskOption1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/edtSumInsured1"
-                    android:layout_alignBottom="@+id/edtSumInsured1"
+                    android:layout_alignBaseline="@id/edtSumInsured1"
+                    android:layout_alignBottom="@id/edtSumInsured1"
                     android:layout_alignParentRight="true"
                     android:checked="true"
                     android:enabled="false"
@@ -97,42 +104,42 @@
                 android:paddingTop="10dp" >
 
                 <TextView
-                    android:id="@+id/txtRiskOption"
+                    android:id="@+id/txtRiskOption2"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:text="Optional"
+                    android:text="@string/txt_optional"
                     android:textColor="@color/title_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtRiskName"
+                    android:id="@+id/txtRiskName2"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:text="Risk Name" />
+                    android:text="@string/title_critical_illness" />
 
                 <TextView
-                    android:id="@+id/txtRiskDescription"
+                    android:id="@+id/txtRiskDescription2"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskName"
-                    android:text="Risk Description"
+                    android:layout_below="@id/txtRiskName2"
+                    android:text="@string/descri_provides_you_with_a_chosen_cash_"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtSumInsured"
+                    android:id="@+id/txtSumInsured2"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskDescription"
+                    android:layout_below="@id/txtRiskDescription2"
                     android:text="@string/txt_sum_insured"
                     android:textColor="@color/title_secondary_color" />
 
@@ -142,12 +149,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtSumInsured"
-                    android:layout_toLeftOf="@+id/chkRiskOption"
+                    android:layout_below="@id/txtSumInsured2"
+                    android:layout_toLeftOf="@+id/chkRiskOption2"
                     android:ems="10"
                     android:enabled="false"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_sum_insured"
                     android:inputType="number" >
                 </EditText>
 
@@ -155,8 +161,8 @@
                     android:id="@+id/chkRiskOption2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/edtSumInsured2"
-                    android:layout_alignBottom="@+id/edtSumInsured2"
+                    android:layout_alignBaseline="@id/edtSumInsured2"
+                    android:layout_alignBottom="@id/edtSumInsured2"
                     android:layout_alignParentRight="true"
                     android:textSize="@dimen/text_size_small" />
             </RelativeLayout>
@@ -170,42 +176,42 @@
                 android:paddingTop="10dp" >
 
                 <TextView
-                    android:id="@+id/txtRiskOption"
+                    android:id="@+id/txtRiskOption3"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:text="Optional"
+                    android:text="@string/txt_optional"
                     android:textColor="@color/title_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtRiskName"
+                    android:id="@+id/txtRiskName3"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:text="Risk Name" />
+                    android:text="@string/title_total_permanent_disablement" />
 
                 <TextView
-                    android:id="@+id/txtRiskDescription"
+                    android:id="@+id/txtRiskDescription3"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskName"
-                    android:text="Risk Description"
+                    android:layout_below="@id/txtRiskName3"
+                    android:text="@string/descri_provides_you_with_a_chosen_cash_amount_"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
-                    android:id="@+id/txtSumInsured"
+                    android:id="@+id/txtSumInsured3"
                     style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtRiskDescription"
+                    android:layout_below="@id/txtRiskDescription3"
                     android:text="@string/txt_sum_insured"
                     android:textColor="@color/title_secondary_color" />
 
@@ -215,12 +221,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@id/txtSumInsured"
-                    android:layout_toLeftOf="@+id/chkRiskOption"
+                    android:layout_below="@id/txtSumInsured3"
+                    android:layout_toLeftOf="@+id/chkRiskOption3"
                     android:ems="10"
                     android:enabled="false"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_sum_insured"
                     android:inputType="number" >
                 </EditText>
 
@@ -236,8 +241,7 @@
 
             <Button
                 android:id="@+id/btnGetQuote"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                style="@style/DefaultYellowButton"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:text="@string/btn_get_quote" />

@@ -15,7 +15,7 @@ public class HomeBaseActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getSupportActionBar().setHomeButtonEnabled(true);
+		// getSupportActionBar().setHomeButtonEnabled(true);
 	}
 
 	@Override

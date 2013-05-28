@@ -21,7 +21,7 @@ public class ProductsActivity extends HomeBaseActivity implements
 		setContentView(R.layout.activity_products);
 
 		ListView listView = (ListView) findViewById(R.id.listView);
-		listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row_item_1,
+		listView.setAdapter(new ArrayAdapter<String>(this, R.layout.simple_list_item_1,
 				getResources().getStringArray(R.array.products_array)));
 
 		listView.setOnItemClickListener(this);

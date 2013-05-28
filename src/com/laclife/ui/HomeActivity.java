@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.actionbarsherlock.app.SherlockActivity;
 import com.laclife.ui.products.ProductsActivity;
+import com.laclife.ui.registration.RegisterActivity;
 
-public class HomeActivity extends SherlockActivity implements OnClickListener {
+public class HomeActivity extends BaseActivity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -17,33 +17,35 @@ public class HomeActivity extends SherlockActivity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		Button btnMyLAC = (Button) findViewById(R.id.btnMyLAC);
+		Button btnLogin = (Button) findViewById(R.id.btnLogin);
 		Button btnProducts = (Button) findViewById(R.id.btnProducts);
-		Button btnContactUs = (Button) findViewById(R.id.btnContactUs);
-		Button btnUtilities = (Button) findViewById(R.id.btnUtilities);
+		Button btnContact = (Button) findViewById(R.id.btnContact);
+		Button btnAboutApp = (Button) findViewById(R.id.btnAboutApp);
 
-		btnMyLAC.setOnClickListener(this);
+		btnLogin.setOnClickListener(this);
 		btnProducts.setOnClickListener(this);
-		btnContactUs.setOnClickListener(this);
-		btnUtilities.setOnClickListener(this);
+		btnContact.setOnClickListener(this);
+		btnAboutApp.setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View view) {
 		int id = view.getId();
 		switch (id) {
-		case R.id.btnMyLAC:
+		case R.id.btnLogin:
+			Intent registerIntent = new Intent(this, RegisterActivity.class);
+			startActivity(registerIntent);
 
 			break;
 		case R.id.btnProducts:
-			Intent intent = new Intent(this, ProductsActivity.class);
-			startActivity(intent);
+			Intent productsIntent = new Intent(this, ProductsActivity.class);
+			startActivity(productsIntent);
 
 			break;
-		case R.id.btnContactUs:
+		case R.id.btnContact:
 
 			break;
-		case R.id.btnUtilities:
+		case R.id.btnAboutApp:
 
 			break;
 

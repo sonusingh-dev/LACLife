@@ -5,20 +5,44 @@
     <string name="action_settings">Settings</string>
 
     <!-- Title -->
+    <string name="title_">Title</string>
     <string name="title_code_sent">Code Sent!</string>
     <string name="title_quote_sent">Quote Sent!</string>
     <string name="title_select_gender">Select Gender</string>
+    <string name="title_products">Products</string>
+    <string name="title_product">Product</string>
+    <string name="title_product_quote">Product Quote</string>
+    <string name="title_mobile_number">Mobile number</string>
+    <string name="title_policy_number">Policy number</string>
+    <string name="title_email_address">Email address</string>
+    <string name="title_register">Register</string>
+    <string name="title_requirements">Requirements</string>
+    <string name="title_your_details">Your Details</string>
+    <string name="title_enter_details">Enter Details</string>
+    <string name="title_review_details">Review Details</string>
+    <string name="title_life_term_insurance">Life term insurance</string>
+    <string name="title_critical_illness">Critical illness</string>
+    <string name="title_total_permanent_disablement">Total &amp; permanent disablement</string>
+    <string name="title_your_mobile_number">Your Mobile Number</string>
+    <string name="title_your_personal_details">Your Personal Details</string>
+    <string name="title_please_confirm_that_the_details_are_correct">Please confirm that the details are correct</string>
 
     <!-- Button Label -->
-    <string name="btn_my_lac_life">My LAC Life</string>
-    <string name="btn_products">Products</string>
-    <string name="btn_contact_us">Contact us</string>
-    <string name="btn_utilities">Utilities</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_products">PRODUCTS</string>
+    <string name="btn_contact">CONTACT</string>
+    <string name="btn_about_app">ABOUT APP</string>
     <string name="btn_get_a_quote">Get a quote</string>
     <string name="btn_get_quote">Get quote</string>
     <string name="btn_mail_us">Mail us</string>
     <string name="btn_next">Next</string>
     <string name="btn_resend_code">Resend code</string>
+    <string name="btn_email_this_quote">Email this Quote</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_select_gender">Select Gender</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="btn_submit_details">Submit Details</string>
+    <string name="btn_begin">Begin</string>
 
     <!-- Hint -->
     <string name="hint_first_name">First Name</string>
@@ -26,7 +50,14 @@
     <string name="hint_phone_">Phone #</string>
     <string name="hint_email">Email</string>
     <string name="hint_date_of_birth">Date of birth</string>
-    <string name="hint_desired_savings">Desired yearly savings</string>
+    <string name="hint_desired_savings">Enter the desired yearly savings</string>
+    <string name="hint_enter_the_verification_code">Enter verification code</string>
+    <string name="hint_sum_insured">Sum insured</string>
+    <string name="hint_mobile_phone_number">Mobile Phone Number</string>
+    <string name="hint_confirm_mobile_phone_number">Confirm Mobile Phone Number</string>
+    <string name="hint_your_account">Your Account</string>
+    <string name="hint_policy_number">Policy Number</string>
+    <string name="hint_email_address">Email Address</string>
 
     <!-- Text Label -->
     <string name="txt_male">Male</string>
@@ -36,6 +67,14 @@
     <string name="txt_desired_savings">Desired yearly savings</string>
     <string name="txt_gender">Gender</string>
     <string name="txt_sum_insured">Sum insured</string>
+    <string name="txt_mandatory">Mandatory</string>
+    <string name="txt_optional">Optional</string>
+    <string name="txt_click_here_to_view_our_full_terms_conditions">Click here to view our full Terms &amp; Conditions</string>
+    <string name="txt_tick_this_box_to_accept_">Tick this box to accept the Terms &amp; Conditions and proceed</string>
+
+    <!-- Alert -->
+    <string name="alert_code_sent">A verification code has been sent to your phone. Please enter code on the next screen</string>
+    <string name="alert_quote_sent">A copy of this quote has been sent to your email address</string>
 
     <!-- Description -->
     <string name="des_your_contact_details">Your contact details</string>
@@ -44,11 +83,29 @@
     <string name="des_verify_number_">Please verify your number</string>
     <string name="des_your_quote">Your quote</string>
     <string name="des_enter_the_code_">Enter the code sent to your phone in the field below to get the quote</string>
-
-    <!-- Alert -->
-    <string name="alert_code_sent">A verification code has been sent to your phone. Please enter code on the next screen</string>
-    <string name="alert_quote_sent">A copy of this quote has been sent to your email address</string>
-    <string name="btn_select_gender">Select Gender</string>
-    <string name="dec_leadway_life">Leadway Life</string>
+    <string name="des_leadway_life">Leadway Life</string>
+    <string name="des_product_description">The App is for Life Business Policy Holders to check status of the policies, prior payment
+details or make a complaint to customer service section. The app can also be used by
+prospective customers to get quotes for the policies which they’re interested in.
+This document specifies the features and functionality for the app but does not include
+technical architecture information.Most of the features in the app will rely on API calls to
+Leadway’s platform using XML which Leadway will provide.
+Illustrations used in this document are wireframes and not the final designs.</string>
+    <string name="des_final_quote">Most of the features in the app will rely on API calls to
+Leadway’s platform using XML which Leadway will provide.
+Illustrations used in this document are wireframes and not the final designs.</string>
+    <string name="des_manage_your_life_policies_">Manage your Life policies on the go using Leadway LIFE. A free and secure service from Leadway Assurance Compnay</string>
+    <string name="des_to_get_started_you_will_">To get started you will need the following</string>
+    <string name="descri_this_will_be_used_">This will be used to link your number to your account</string>
+    <string name="descri_to_verify_your_account_">To verify your account with Leadway, you will need to have the policy number of any existing life product you\'re subscribed to</string>
+    <string name="descri_you_will_need_to_provide_">You will need to provide the email address we have on file for any life policy you have with Leadway</string>
+    <string name="descri_for_this_step_you_will_">For this step you will need the policy number for any life product you currently have with leadway Assurance</string>
+    <string name="descri_for_your_security_we_need_">For your security, we need to confirm your personal information</string>
+    <string name="descri_provides_a_chosen_cash_amount_">Provides a chosen cash amount to your loved ones when you are no longer here</string>
+    <string name="descri_provides_you_with_a_chosen_cash_">Provides you with a chosen cash amount if you are diagnosed with a specific sickness or injury</string>
+    <string name="descri_provides_you_with_a_chosen_cash_amount_">Provides you with a chosen cash amount if you can not return to work due to temporary or permanent injury</string>
+    <string name="descri_enter_the_mobile_number_">Enter the mobile number you&amp;apos;d like to link to Leadway LIFE Mobile</string>
+    <string name="descri_enter_your_email_address_and_a_policy_">Enter your email address and a policy number from one of your life policies</string>
+    <string name="descri_please_enter_your_full_">Please enter your full name and date of birth</string>
 
 </resources>

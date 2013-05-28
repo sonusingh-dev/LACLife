@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/des_to_get_started_you_will_"
+        android:textColor="@color/title_primary_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <include layout="@layout/layout_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/title_mobile_number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/descri_this_will_be_used_"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/ic_phone" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/title_policy_number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/descri_to_verify_your_account_"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/ic_file" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/title_email_address" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/SimpleTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/descri_you_will_need_to_provide_"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/ic_email" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/DefaultYellowButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_continue" />
+
+</LinearLayout>

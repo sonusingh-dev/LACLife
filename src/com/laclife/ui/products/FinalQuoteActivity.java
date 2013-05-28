@@ -1,11 +1,13 @@
 package com.laclife.ui.products;
 
+import java.util.List;
+
 import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
@@ -16,23 +18,48 @@ public class FinalQuoteActivity extends HomeBaseActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_add_risk);
+		setContentView(R.layout.activity_final_quote);
 
-		String product = ((LACLifeApplication) getApplication()).getProductQuote();
+		String product = ((LACLifeApplication) getApplication())
+				.getProductQuote();
 		setActionBarTitle(product);
-		
-		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
-		
-		Button btnGetQuote = (Button) findViewById(R.id.btnGetQuote);
-		btnGetQuote.setOnClickListener(this);
-		
-		txtTitle.setText(getString(R.string.des_your_quote));
+
+		Button btnEmail = (Button) findViewById(R.id.btnEmail);
+		btnEmail.setOnClickListener(this);
+
 	}
 
 	@Override
 	public void onClick(View view) {
-		Intent intent = new Intent(this, NumberVerificationActivity.class);
-		startActivity(intent);
+		sendEmail();
+	}
+
+	/**
+	 * Invokes android Gmail mailing client for sending email.
+	 */
+	private void sendEmail() {
+
+		Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+		intent.setType("text/html");
+		List<ResolveInfo> resInfo = getPackageManager().queryIntentActivities(
+				intent, 0);
+
+		if (!resInfo.isEmpty()) {
+			for (ResolveInfo info : resInfo) {
+				if (info.activityInfo.packageName.toLowerCase().contains(
+						"gmail")
+						|| info.activityInfo.name.toLowerCase().contains(
+								"gmail")) {
+					intent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+							"Subject");
+					intent.putExtra(android.content.Intent.EXTRA_TEXT,
+							"Email Body");
+					intent.setPackage(info.activityInfo.packageName);
+					startActivity(Intent.createChooser(intent, "Email:"));
+				}
+			}
+		}
+
 	}
 
 }

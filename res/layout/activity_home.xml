@@ -1,29 +1,39 @@
-<com.laclife.ui.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/BaseLayout"
-    android:layout_weight="1" >
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/btnMyLAC"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_launcher"
-        android:text="@string/btn_my_lac_life" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btnProducts"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_launcher"
-        android:text="@string/btn_products" />
+    <com.laclife.ui.widget.DashboardLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
 
-    <Button
-        android:id="@+id/btnContactUs"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_launcher"
-        android:text="@string/btn_contact_us" />
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/DashboardButton"
+            android:background="@drawable/login_button_selector" />
 
-    <Button
-        android:id="@+id/btnUtilities"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_launcher"
-        android:text="@string/btn_utilities" />
+        <Button
+            android:id="@+id/btnProducts"
+            style="@style/DashboardButton"
+            android:background="@drawable/products_button_selector" />
 
-</com.laclife.ui.DashboardLayout>
+        <Button
+            android:id="@+id/btnContact"
+            style="@style/DashboardButton"
+            android:background="@drawable/contact_button_selector" />
+
+        <Button
+            android:id="@+id/btnAboutApp"
+            style="@style/DashboardButton"
+            android:background="@drawable/about_button_selector" />
+    </com.laclife.ui.widget.DashboardLayout>
+
+</LinearLayout>

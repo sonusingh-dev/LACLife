@@ -9,7 +9,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
@@ -38,8 +37,6 @@ public class AddRiskActivity extends HomeBaseActivity implements
 		edtSumInsured2 = (EditText) findViewById(R.id.edtSumInsured2);
 		edtSumInsured3 = (EditText) findViewById(R.id.edtSumInsured3);
 
-		final TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
-
 		final CheckBox chkRiskOption1 = (CheckBox) findViewById(R.id.chkRiskOption1);
 		final CheckBox chkRiskOption2 = (CheckBox) findViewById(R.id.chkRiskOption2);
 		final CheckBox chkRiskOption3 = (CheckBox) findViewById(R.id.chkRiskOption3);
@@ -51,7 +48,6 @@ public class AddRiskActivity extends HomeBaseActivity implements
 		chkRiskOption3.setOnCheckedChangeListener(this);
 		btnGetQuote.setOnClickListener(this);
 
-		txtTitle.setText(R.string.des_add_risk_to_);
 	}
 
 	@Override
@@ -87,10 +83,13 @@ public class AddRiskActivity extends HomeBaseActivity implements
 	}
 
 	private void setEditable(EditText editText, boolean edibility) {
-		editText.setText("");		
+		if (edibility) {
+			editText.requestFocus();
+		} else {
+			editText.setText("");
+		}
+
 		editText.setEnabled(edibility);
-		editText.setFocusable(edibility);
-		editText.setFocusableInTouchMode(edibility);
 	}
 
 }

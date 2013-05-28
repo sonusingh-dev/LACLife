@@ -5,13 +5,10 @@ import java.util.List;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 
-import com.laclife.Constant.Products;
 import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
 
@@ -29,9 +26,7 @@ public class ProductDescriptionActivity extends HomeBaseActivity implements
 				.getProduct();
 		setActionBarTitle(productQuote);
 
-		String product = getIntent().getStringExtra(Products.NAME);
-
-		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
+		// String product = getIntent().getStringExtra(Products.NAME);
 
 		Button btnGetQuote = (Button) findViewById(R.id.btnGetQuote);
 		Button btnMailUs = (Button) findViewById(R.id.btnMailUs);
@@ -39,8 +34,6 @@ public class ProductDescriptionActivity extends HomeBaseActivity implements
 		btnGetQuote.setOnClickListener(this);
 		btnMailUs.setOnClickListener(this);
 
-		txtTitle.setText(R.string.dec_leadway_life);
-		txtTitle.setGravity(Gravity.CENTER_HORIZONTAL);
 	}
 
 	@Override

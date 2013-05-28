@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.laclife.LACLifeApplication;
 import com.laclife.ui.R;
@@ -32,8 +31,6 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 				.getProductQuote();
 		setActionBarTitle(product);
 
-		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
-		
 		edtSavings = (EditText) findViewById(R.id.edtSavings);
 
 		spnCoverPeriod = (Spinner) findViewById(R.id.spnCoverPeriod);
@@ -45,10 +42,10 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 		// layout
 		ArrayAdapter<CharSequence> coverPeriodAdapter = ArrayAdapter
 				.createFromResource(this, R.array.covder_period_array,
-						android.R.layout.simple_spinner_item);
+						R.layout.simple_spinner_item);
 		ArrayAdapter<CharSequence> payFrequencyAdapter = ArrayAdapter
 				.createFromResource(this, R.array.pay_frequency_array,
-						android.R.layout.simple_spinner_item);
+						R.layout.simple_spinner_item);
 
 		// Specify the layout to use when the list of choices appears
 		coverPeriodAdapter
@@ -62,8 +59,7 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 
 		spnCoverPeriod.setOnItemSelectedListener(this);
 		btnNext.setOnClickListener(this);
-		
-		txtTitle.setText(R.string.des_tell_us_how_);
+
 	}
 
 	@Override

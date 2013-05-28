@@ -16,6 +16,8 @@ public class BaseActivity extends SherlockActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.Theme_Sherlock);
 		super.onCreate(savedInstanceState);
+
+		setActionBarBackground(R.drawable.horizontal_yellow_bar);
 	}
 
 	// set title for ActionBar
@@ -27,7 +29,8 @@ public class BaseActivity extends SherlockActivity {
 	// set background image for ActionBar
 	protected void setActionBarBackground(int drawable) {
 		ActionBar actionBar = getSupportActionBar();
-		actionBar.setBackgroundDrawable(getResources().getDrawable(drawable));
+		actionBar.setBackgroundDrawable(getResources().getDrawable(
+				R.drawable.horizontal_yellow_bar));
 	}
 
 	// set background image for ActionBar
@@ -45,8 +48,20 @@ public class BaseActivity extends SherlockActivity {
 		Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
 	}
 
-	public void log(Object msg) {
+	protected void log(Object msg) {
 		Log.d(getClass().getCanonicalName(), "" + msg);
+	}
+
+	protected void logDebug(String tag, String msg) {
+		Log.d(tag, msg);
+	}
+
+	protected void logError(String tag, String msg) {
+		Log.e(tag, msg);
+	}
+
+	protected void logInfo(String tag, String msg) {
+		Log.i(tag, msg);
 	}
 
 	@Override

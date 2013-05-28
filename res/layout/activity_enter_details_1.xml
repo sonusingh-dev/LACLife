@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_comment"
+        android:drawablePadding="6dp"
+        android:text="@string/descri_for_your_security_we_need_"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_your_mobile_number" />
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descri_enter_the_mobile_number_"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/edtMobileNumber"
+        style="@style/SimpleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/hint_mobile_phone_number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtMobileConfirm"
+        style="@style/SimpleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/hint_confirm_mobile_phone_number"
+        android:inputType="phone" />
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_your_account" />
+
+    <TextView
+        style="@style/SimpleTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descri_enter_your_email_address_and_a_policy_"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/edtPolicyNumber"
+        style="@style/SimpleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/hint_policy_number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtEmailAddr"
+        style="@style/SimpleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/hint_email_address"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/DefaultYellowButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_continue" />
+
+</LinearLayout>

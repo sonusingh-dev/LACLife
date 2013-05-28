@@ -1,47 +1,48 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/BaseLayout"
     android:orientation="vertical"
     android:padding="10dp" >
 
-    <include
-        android:id="@+id/txtTitle"
-        android:layout_centerHorizontal="true"
-        layout="@layout/layout_title" />
-
-    <Button
-        android:id="@+id/btnMailUs"
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/btn_mail_us" />
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/des_leadway_life"
+        android:textColor="@color/title_primary_color"
+        android:textSize="@dimen/title_text_size" />
 
-    <Button
-        android:id="@+id/btnGetQuote"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/btnMailUs"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/btn_get_quote" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/btnGetQuote"
-        android:layout_below="@id/txtTitle" >
-
-        <TextView
-            android:id="@+id/txtDescription"
-            style="@style/SimpleTextColor"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description" />
-    </HorizontalScrollView>
+            android:orientation="vertical" >
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/txtDescription"
+                style="@style/SimpleTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/des_product_description" />
+
+            <Button
+                android:id="@+id/btnGetQuote"
+                style="@style/DefaultYellowButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_get_quote" />
+
+            <Button
+                android:id="@+id/btnMailUs"
+                style="@style/DefaultYellowButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_mail_us" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

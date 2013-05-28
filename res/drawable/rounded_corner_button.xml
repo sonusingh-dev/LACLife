@@ -7,6 +7,15 @@
         android:width="1dp"
         android:color="#FF404040" />
 
+    <!-- you can use any color you want I used here gray color -->
+    <solid android:color="#FFFFFFFF" />
+
     <corners android:radius="10dp" />
+
+    <gradient
+        android:angle="270"
+        android:centerColor="#F79F12"
+        android:endColor="#F7770E"
+        android:startColor="#FCBC15" />
 
 </shape>
