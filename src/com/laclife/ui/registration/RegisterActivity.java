@@ -12,7 +12,7 @@ import com.laclife.ui.R;
 public class RegisterActivity extends BaseActivity implements OnClickListener {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
 

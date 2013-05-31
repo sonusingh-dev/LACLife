@@ -2,8 +2,8 @@ package com.laclife.ui.products;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
-import com.actionbarsherlock.view.MenuItem;
 import com.laclife.ui.BaseActivity;
 import com.laclife.ui.HomeActivity;
 

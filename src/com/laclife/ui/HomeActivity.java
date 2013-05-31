@@ -8,12 +8,12 @@ import android.widget.Button;
 
 import com.laclife.ui.products.ProductsActivity;
 import com.laclife.ui.registration.RegisterActivity;
+import com.laclife.ui.user.SlidingMenuBaseActivity;
 
 public class HomeActivity extends BaseActivity implements OnClickListener {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		setTheme(R.style.Theme_Sherlock);
+	protected void onCreate(Bundle savedInstanceState) {		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
@@ -33,7 +33,7 @@ public class HomeActivity extends BaseActivity implements OnClickListener {
 		int id = view.getId();
 		switch (id) {
 		case R.id.btnLogin:
-			Intent registerIntent = new Intent(this, RegisterActivity.class);
+			Intent registerIntent = new Intent(this, SlidingMenuBaseActivity.class);
 			startActivity(registerIntent);
 
 			break;

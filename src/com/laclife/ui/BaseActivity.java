@@ -4,39 +4,21 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
+import com.slidingmenu.actionbar.ActionBarActivity;
 
 /*
  * All activity extends BaseActivity and it set background image for ActionBar.
  */
-public class BaseActivity extends SherlockActivity {
+public class BaseActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		setTheme(R.style.Theme_Sherlock);
 		super.onCreate(savedInstanceState);
-
-		setActionBarBackground(R.drawable.horizontal_yellow_bar);
 	}
 
 	// set title for ActionBar
 	protected void setActionBarTitle(String title) {
-		ActionBar actionBar = getSupportActionBar();
-		actionBar.setTitle(title);
-	}
-
-	// set background image for ActionBar
-	protected void setActionBarBackground(int drawable) {
-		ActionBar actionBar = getSupportActionBar();
-		actionBar.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.horizontal_yellow_bar));
-	}
-
-	// set background image for ActionBar
-	protected void setActionBarBackgroundColor(int color) {
-		ActionBar actionBar = getSupportActionBar();
-		actionBar.setBackgroundDrawable(getResources().getDrawable(color));
+		// setTitle(title);
 	}
 
 	public void shortToast(String text) {

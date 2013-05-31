@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_slide_menu" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtDirectDebit"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_menu_direct_debit"
+            android:text="@string/menu_direct_debit" />
+
+        <TextView
+            android:id="@+id/txtAboutUs"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:text="@string/menu_about_us" />
+
+        <TextView
+            android:id="@+id/txtContactUs"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:text="@string/menu_contact_us" />
+
+        <TextView
+            android:id="@+id/txtFAQ"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_menu_faq"
+            android:text="@string/menu_faqs" />
+
+        <TextView
+            android:id="@+id/txtTermsConditions"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_menu_terms_conditions"
+            android:text="@string/menu_terms_conditions" />
+
+        <TextView
+            android:id="@+id/txtChangePassword"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_menu_change_password"
+            android:text="@string/menu_change_password" />
+
+        <TextView
+            android:id="@+id/txtMyPolicies"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:text="@string/menu_my_policies" />
+
+        <TextView
+            android:id="@+id/txtLogout"
+            style="@style/SlidingMenuText"
+            android:drawableLeft="@drawable/ic_menu_logout"
+            android:text="@string/menu_logout" />
+    </LinearLayout>
+
+</ScrollView>

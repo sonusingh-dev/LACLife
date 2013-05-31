@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme.Light" >
         <activity
             android:name=".SplashScreenActivity"
             android:label="@string/app_name"
@@ -24,10 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".HomeActivity"
-            android:label="@string/app_name"
+            android:label="@string/activity_home"
             android:screenOrientation="portrait" >
         </activity>
 
@@ -97,6 +96,13 @@
         <activity
             android:name=".registration.ReviewDetailsActivity"
             android:label="@string/title_review_details"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name="com.laclife.ui.user.SlidingMenuBaseActivity"
+            android:label="@string/title_register"
             android:screenOrientation="portrait" >
         </activity>
     </application>

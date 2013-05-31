@@ -3,9 +3,11 @@
 
     <string name="app_name">LAC Life</string>
     <string name="action_settings">Settings</string>
+    <string name="activity_home">Welcome</string>
 
     <!-- Title -->
     <string name="title_">Title</string>
+    <string name="title_home">Welcome</string>
     <string name="title_code_sent">Code Sent!</string>
     <string name="title_quote_sent">Quote Sent!</string>
     <string name="title_select_gender">Select Gender</string>
@@ -107,5 +109,15 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="descri_enter_the_mobile_number_">Enter the mobile number you&amp;apos;d like to link to Leadway LIFE Mobile</string>
     <string name="descri_enter_your_email_address_and_a_policy_">Enter your email address and a policy number from one of your life policies</string>
     <string name="descri_please_enter_your_full_">Please enter your full name and date of birth</string>
+
+    <!-- Sliding Menu -->
+    <string name="menu_direct_debit">Direct Debit</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_faqs">FAQs</string>
+    <string name="menu_terms_conditions">Terms &amp; Conditions</string>
+    <string name="menu_change_password">Change Password</string>
+    <string name="menu_my_policies">My Policies</string>
+    <string name="menu_logout">Logout</string>
 
 </resources>

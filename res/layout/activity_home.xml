@@ -1,15 +1,7 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BaseLayout"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/logo" />
-
+    <!--
     <com.laclife.ui.widget.DashboardLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -18,22 +10,72 @@
         <Button
             android:id="@+id/btnLogin"
             style="@style/DashboardButton"
-            android:background="@drawable/login_button_selector" />
+            android:background="@drawable/selector_login_button" />
 
         <Button
             android:id="@+id/btnProducts"
             style="@style/DashboardButton"
-            android:background="@drawable/products_button_selector" />
+            android:background="@drawable/selector_products_button" />
 
         <Button
             android:id="@+id/btnContact"
             style="@style/DashboardButton"
-            android:background="@drawable/contact_button_selector" />
+            android:background="@drawable/selector_contact_button" />
 
         <Button
             android:id="@+id/btnAboutApp"
             style="@style/DashboardButton"
-            android:background="@drawable/about_button_selector" />
+            android:background="@drawable/selector_about_button" />
     </com.laclife.ui.widget.DashboardLayout>
+    -->
 
-</LinearLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/DashboardButton"
+                android:background="@drawable/selector_login_button" />
+
+            <Button
+                android:id="@+id/btnProducts"
+                style="@style/DashboardButton"
+                android:background="@drawable/selector_products_button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnContact"
+                style="@style/DashboardButton"
+                android:background="@drawable/selector_contact_button" />
+
+            <Button
+                android:id="@+id/btnAboutApp"
+                style="@style/DashboardButton"
+                android:background="@drawable/selector_about_button" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logo" />
+
+</RelativeLayout>
