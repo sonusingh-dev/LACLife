@@ -4,12 +4,9 @@
     android:padding="10dp" >
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/HeaderText"
         android:layout_marginBottom="6dp"
-        android:text="@string/des_add_risk_to_"
-        android:textColor="@color/title_primary_color"
-        android:textSize="@dimen/title_text_size" />
+        android:text="@string/des_add_risk_to_" />
 
     <include layout="@layout/layout_divider" />
 
@@ -31,13 +28,12 @@
 
                 <TextView
                     android:id="@+id/txtRiskOption1"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/txt_mandatory"
-                    android:textColor="@color/title_secondary_color"
+                    android:textColor="@color/text_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
@@ -61,13 +57,12 @@
 
                 <TextView
                     android:id="@+id/txtSumInsured1"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_below="@id/txtRiskDescription1"
                     android:text="@string/txt_sum_insured"
-                    android:textColor="@color/title_secondary_color" />
+                    android:textColor="@color/text_secondary_color" />
 
                 <EditText
                     android:id="@+id/edtSumInsured1"
@@ -105,13 +100,12 @@
 
                 <TextView
                     android:id="@+id/txtRiskOption2"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/txt_optional"
-                    android:textColor="@color/title_secondary_color"
+                    android:textColor="@color/text_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
@@ -135,13 +129,12 @@
 
                 <TextView
                     android:id="@+id/txtSumInsured2"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_below="@id/txtRiskDescription2"
                     android:text="@string/txt_sum_insured"
-                    android:textColor="@color/title_secondary_color" />
+                    android:textColor="@color/text_secondary_color" />
 
                 <EditText
                     android:id="@+id/edtSumInsured2"
@@ -177,13 +170,12 @@
 
                 <TextView
                     android:id="@+id/txtRiskOption3"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/txt_optional"
-                    android:textColor="@color/title_secondary_color"
+                    android:textColor="@color/text_secondary_color"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
@@ -207,13 +199,12 @@
 
                 <TextView
                     android:id="@+id/txtSumInsured3"
-                    style="@style/SimpleTextColor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_below="@id/txtRiskDescription3"
                     android:text="@string/txt_sum_insured"
-                    android:textColor="@color/title_secondary_color" />
+                    android:textColor="@color/text_secondary_color" />
 
                 <EditText
                     android:id="@+id/edtSumInsured3"

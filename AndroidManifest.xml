@@ -33,7 +33,7 @@
         <!-- Products -->
         <activity
             android:name=".products.ProductsActivity"
-            android:label="@string/title_products"
+            android:label="@string/activity_products"
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -70,39 +70,44 @@
         <!-- Products -->
         <activity
             android:name=".registration.RegisterActivity"
-            android:label="@string/title_register"
+            android:label="@string/activity_register"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".registration.RequirementsActivity"
-            android:label="@string/title_requirements"
+            android:label="@string/activity_requirements"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".registration.YourDetailsActivity"
-            android:label="@string/title_your_details"
+            android:label="@string/activity_your_details"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".registration.EnterDetailsActivity1"
-            android:label="@string/title_enter_details"
+            android:label="@string/activity_enter_details"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".registration.EnterDetailsActivity2"
-            android:label="@string/title_enter_details"
+            android:label="@string/activity_enter_details"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".registration.ReviewDetailsActivity"
-            android:label="@string/title_review_details"
+            android:label="@string/activity_review_details"
             android:screenOrientation="portrait" >
         </activity>
 
-        <!-- Login -->
+        <!-- Login -->        
         <activity
-            android:name="com.laclife.ui.user.SlidingMenuBaseActivity"
-            android:label="@string/title_register"
+            android:name=".login.LoginActivity"
+            android:label="@string/activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".login.SlidingMenuBaseActivity"
+            android:label="@string/activity_login"
             android:screenOrientation="portrait" >
         </activity>
     </application>

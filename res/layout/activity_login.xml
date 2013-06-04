@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/HeaderText"
+        android:layout_marginBottom="6dp"
+        android:text="@string/txt_please_enter_in_5_digit_passcode_to_login" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText1"
+            style="@style/PasscodeText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/PasscodeText" />
+
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/PasscodeText" />
+
+        <EditText
+            android:id="@+id/editText3"
+            style="@style/PasscodeText" />
+
+        <EditText
+            android:id="@+id/editText5"
+            style="@style/PasscodeText" />
+    </LinearLayout>
+
+</LinearLayout>

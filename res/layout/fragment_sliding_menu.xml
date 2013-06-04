@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
+        <include layout="@layout/layout_sliding_menu_header" />
+
         <TextView
             android:id="@+id/txtDirectDebit"
             style="@style/SlidingMenuText"

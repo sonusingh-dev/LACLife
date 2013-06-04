@@ -8,8 +8,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.laclife.Constant.Products;
 import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
 public class ProductsActivity extends HomeBaseActivity implements

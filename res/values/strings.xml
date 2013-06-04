@@ -3,25 +3,27 @@
 
     <string name="app_name">LAC Life</string>
     <string name="action_settings">Settings</string>
+    
+    <!-- Activity -->
     <string name="activity_home">Welcome</string>
+    <string name="activity_login">Login</string>
+    <string name="activity_products">Products</string>
+    <string name="activity_register">Register</string>
+    <string name="activity_review_details">Review Details</string>
+    <string name="activity_enter_details">Enter Details</string>
+    <string name="activity_your_details">Your Details</string>
+    <string name="activity_requirements">Requirements</string>
 
     <!-- Title -->
     <string name="title_">Title</string>
-    <string name="title_home">Welcome</string>
     <string name="title_code_sent">Code Sent!</string>
     <string name="title_quote_sent">Quote Sent!</string>
     <string name="title_select_gender">Select Gender</string>
-    <string name="title_products">Products</string>
     <string name="title_product">Product</string>
     <string name="title_product_quote">Product Quote</string>
     <string name="title_mobile_number">Mobile number</string>
     <string name="title_policy_number">Policy number</string>
     <string name="title_email_address">Email address</string>
-    <string name="title_register">Register</string>
-    <string name="title_requirements">Requirements</string>
-    <string name="title_your_details">Your Details</string>
-    <string name="title_enter_details">Enter Details</string>
-    <string name="title_review_details">Review Details</string>
     <string name="title_life_term_insurance">Life term insurance</string>
     <string name="title_critical_illness">Critical illness</string>
     <string name="title_total_permanent_disablement">Total &amp; permanent disablement</string>
@@ -119,5 +121,6 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
     <string name="menu_logout">Logout</string>
+    <string name="txt_please_enter_in_5_digit_passcode_to_login">Please enter in 5 digit Passcode to Login</string>
 
 </resources>

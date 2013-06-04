@@ -13,13 +13,10 @@
         android:src="@drawable/ic_reg_user" />
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/HeaderText"
         android:layout_marginBottom="15dp"
         android:gravity="center_horizontal"
-        android:text="@string/des_leadway_life"
-        android:textColor="@color/title_primary_color"
-        android:textSize="@dimen/title_text_size" />
+        android:text="@string/des_leadway_life" />
 
     <TextView
         style="@style/SimpleTextColor"

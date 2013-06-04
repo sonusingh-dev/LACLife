@@ -5,12 +5,9 @@
     android:padding="10dp" >
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/HeaderText"
         android:layout_marginBottom="6dp"
-        android:text="@string/des_to_get_started_you_will_"
-        android:textColor="@color/title_primary_color"
-        android:textSize="@dimen/title_text_size" />
+        android:text="@string/des_to_get_started_you_will_" />
 
     <include layout="@layout/layout_divider" />
 

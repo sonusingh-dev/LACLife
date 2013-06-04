@@ -4,12 +4,9 @@
     android:padding="10dp" >
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/HeaderText"
         android:layout_marginBottom="6dp"
-        android:text="@string/des_tell_us_how_"
-        android:textColor="@color/title_primary_color"
-        android:textSize="@dimen/title_text_size" />
+        android:text="@string/des_tell_us_how_" />
 
     <EditText
         android:id="@+id/edtSavings"

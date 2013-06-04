@@ -15,7 +15,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:text="Optional"
-        android:textColor="@color/title_secondary_color"
+        android:textColor="@color/text_secondary_color"
         android:textSize="@dimen/text_size_small" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@id/txtRiskDescription"
         android:text="@string/txt_sum_insured"
-        android:textColor="@color/title_secondary_color"
+        android:textColor="@color/text_secondary_color"
         android:textSize="@dimen/text_size_small" />
 
     <EditText

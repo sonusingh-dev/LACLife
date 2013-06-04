@@ -4,11 +4,8 @@
     android:padding="10dp" >
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_your_personal_details"
-        android:textColor="@color/title_primary_color"
-        android:textSize="@dimen/title_text_size" />
+        style="@style/HeaderText"
+        android:text="@string/title_your_personal_details" />
 
     <TextView
         style="@style/SimpleTextColor"

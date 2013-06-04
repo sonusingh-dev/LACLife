@@ -6,9 +6,7 @@ import android.widget.Toast;
 
 import com.slidingmenu.actionbar.ActionBarActivity;
 
-/*
- * All activity extends BaseActivity and it set background image for ActionBar.
- */
+
 public class BaseActivity extends ActionBarActivity {
 
 	@Override

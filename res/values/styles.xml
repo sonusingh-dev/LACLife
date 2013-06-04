@@ -10,17 +10,33 @@
         <item name="android:textColor">@color/dark_gray</item>
     </style>
 
+    <style name="SimpleTextColorWhite">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+    </style>
+
+    <style name="PasscodeText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_bg_passcode</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">number</item>
+    </style>
+
     <style name="SlidingMenuText">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/actionbar_compat_height</item>
         <item name="android:drawablePadding">6dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:padding">6dp</item>
-    </style>
-
-    <style name="SimpleTextColorWhite">
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="RoundedCornerButton">

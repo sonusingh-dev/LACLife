@@ -44,7 +44,7 @@
             <Button
                 android:id="@+id/btnLogin"
                 style="@style/DashboardButton"
-                android:background="@drawable/selector_login_button" />
+                android:background="@drawable/selector_register_button" />
 
             <Button
                 android:id="@+id/btnProducts"
