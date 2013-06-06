@@ -102,12 +102,11 @@
         <!-- Login -->        
         <activity
             android:name=".login.LoginActivity"
-            android:label="@string/activity_register"
+            android:label="@string/activity_login"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".login.SlidingMenuBaseActivity"
-            android:label="@string/activity_login"
+            android:name=".login.SlidingMenuBaseActivity"            
             android:screenOrientation="portrait" >
         </activity>
     </application>

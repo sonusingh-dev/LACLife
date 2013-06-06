@@ -6,9 +6,10 @@
     
     <!-- Activity -->
     <string name="activity_home">Welcome</string>
-    <string name="activity_login">Login</string>
+    <string name="activity_login">LeadwayLIFE</string>
     <string name="activity_products">Products</string>
     <string name="activity_register">Register</string>
+    <string name="activity_contacts">Contacts</string>
     <string name="activity_review_details">Review Details</string>
     <string name="activity_enter_details">Enter Details</string>
     <string name="activity_your_details">Your Details</string>
@@ -30,6 +31,7 @@
     <string name="title_your_mobile_number">Your Mobile Number</string>
     <string name="title_your_personal_details">Your Personal Details</string>
     <string name="title_please_confirm_that_the_details_are_correct">Please confirm that the details are correct</string>
+    <string name="title_please_enter_in_5_digit_passcode_to_login">Please enter in 5 digit Passcode to Login</string>
 
     <!-- Button Label -->
     <string name="btn_login">LOGIN</string>
@@ -112,15 +114,16 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="descri_enter_your_email_address_and_a_policy_">Enter your email address and a policy number from one of your life policies</string>
     <string name="descri_please_enter_your_full_">Please enter your full name and date of birth</string>
 
-    <!-- Sliding Menu -->
+    <!-- Menu -->
     <string name="menu_direct_debit">Direct Debit</string>
     <string name="menu_about_us">About Us</string>
     <string name="menu_contact_us">Contact Us</string>
     <string name="menu_faqs">FAQs</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_contact">Contact</string>
     <string name="menu_terms_conditions">Terms &amp; Conditions</string>
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
-    <string name="menu_logout">Logout</string>
-    <string name="txt_please_enter_in_5_digit_passcode_to_login">Please enter in 5 digit Passcode to Login</string>
+    <string name="menu_logout">Logout</string>    
 
 </resources>

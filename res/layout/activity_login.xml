@@ -7,33 +7,33 @@
     <TextView
         style="@style/HeaderText"
         android:layout_marginBottom="6dp"
-        android:text="@string/txt_please_enter_in_5_digit_passcode_to_login" />
+        android:text="@string/title_please_enter_in_5_digit_passcode_to_login" />
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" android:gravity="center_horizontal">
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/edtPasscodeCode1"
             style="@style/PasscodeText" >
 
             <requestFocus />
         </EditText>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/edtPasscodeCode2"
             style="@style/PasscodeText" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/edtPasscodeCode3"
             style="@style/PasscodeText" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/edtPasscodeCode4"
             style="@style/PasscodeText" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/edtPasscodeCode5"
             style="@style/PasscodeText" />
     </LinearLayout>
 

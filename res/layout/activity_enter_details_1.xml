@@ -7,7 +7,7 @@
         style="@style/SimpleTextColor"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_comment"
+        android:drawableLeft="@drawable/ic_info"
         android:drawablePadding="6dp"
         android:text="@string/descri_for_your_security_we_need_"
         android:textSize="@dimen/text_size_small" />

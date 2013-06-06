@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.laclife.ui.login.SlidingMenuBaseActivity;
+import com.laclife.ui.login.SlidingMenuActivity;
 import com.laclife.ui.products.ProductsActivity;
 import com.laclife.ui.registration.RegisterActivity;
 

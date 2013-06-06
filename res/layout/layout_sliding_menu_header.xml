@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layoutSlideBarHeader"
     android:layout_width="fill_parent"
-    android:layout_height="@dimen/actionbar_compat_height" >
+    android:layout_height="@dimen/actionbar_compat_height"
+    android:background="@drawable/ic_bg_slide_menu_button" >
 
     <ImageView
         android:id="@+id/imgUserPic"

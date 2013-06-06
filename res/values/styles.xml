@@ -26,8 +26,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/ic_bg_passcode</item>
         <item name="android:maxLength">1</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:inputType">number</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberPassword</item>
     </style>
 
     <style name="SlidingMenuText">
@@ -37,6 +38,7 @@
         <item name="android:drawablePadding">6dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/ic_bg_slide_menu_button</item>
     </style>
 
     <style name="RoundedCornerButton">

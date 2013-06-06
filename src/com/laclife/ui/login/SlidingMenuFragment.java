@@ -1,5 +1,6 @@
 package com.laclife.ui.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +11,8 @@ import android.widget.TextView;
 
 import com.laclife.ui.R;
 
-public class SlidingMenuFragment extends BaseFragment implements OnClickListener {
+public class SlidingMenuFragment extends BaseFragment implements
+		OnClickListener {
 
 	private TextView txtDirectDebit, txtAboutUs, txtContactUs, txtFAQ,
 			txtTermsConditions, txtChangePassword, txtMyPolicies, txtLogout;
@@ -19,7 +21,7 @@ public class SlidingMenuFragment extends BaseFragment implements OnClickListener
 		SlidingMenuFragment fragment = new SlidingMenuFragment();
 		return fragment;
 	}
-	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -52,38 +54,60 @@ public class SlidingMenuFragment extends BaseFragment implements OnClickListener
 	@Override
 	public void onClick(View view) {
 		int id = view.getId();
+
+		ContentFragment fragment;
 		switch (id) {
 		case R.id.txtDirectDebit:
-			DirectDebitFragment directDebitFragment = DirectDebitFragment.newInstance();
-			switchFragment(directDebitFragment);
-			
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_direct_debit));
+			switchFragment(fragment);
+
 			break;
 		case R.id.txtAboutUs:
-			AboutUsFragment aboutUsFragment = AboutUsFragment.newInstance();
-			switchFragment(aboutUsFragment);
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_about_us));
+			switchFragment(fragment);
 
 			break;
 
 		case R.id.txtContactUs:
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_contact_us));
+			switchFragment(fragment);
 
 			break;
 		case R.id.txtFAQ:
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_faqs));
+			switchFragment(fragment);
 
 			break;
 		case R.id.txtTermsConditions:
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_terms_conditions));
+			switchFragment(fragment);
 
 			break;
 
 		case R.id.txtChangePassword:
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_change_password));
+			switchFragment(fragment);
 
 			break;
 		case R.id.txtMyPolicies:
+			fragment = ContentFragment
+					.newInstance(getString(R.string.menu_my_policies));
+			switchFragment(fragment);
 
 			break;
 
 		case R.id.txtLogout:
+			Intent intent = new Intent(getActivity(), LoginActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
 
-			break;	
+			break;
 		default:
 			break;
 		}
@@ -94,8 +118,8 @@ public class SlidingMenuFragment extends BaseFragment implements OnClickListener
 		if (getActivity() == null)
 			return;
 
-		if (getActivity() instanceof SlidingMenuBaseActivity) {
-			SlidingMenuBaseActivity slidingMenu = (SlidingMenuBaseActivity) getActivity();
+		if (getActivity() instanceof SlidingMenuActivity) {
+			SlidingMenuActivity slidingMenu = (SlidingMenuActivity) getActivity();
 			slidingMenu.switchContent(fragment);
 		}
 	}
