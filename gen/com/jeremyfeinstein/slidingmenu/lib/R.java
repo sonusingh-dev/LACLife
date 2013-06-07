@@ -48,7 +48,7 @@ public final class R {
 		public static final int ic_action_share = 0x7f020009;
 		public static final int ic_home = 0x7f020014;
 		public static final int ic_launcher = 0x7f020016;
-		public static final int ic_slider_menu = 0x7f020025;
+		public static final int ic_slider_menu = 0x7f020029;
 	}
 	public static final class id {
 		public static final int actionbar_compat = 0x7f040005;
@@ -61,14 +61,14 @@ public final class R {
 		public static final int menu_refresh = 0x7f040009;
 		public static final int right = 0x7f040001;
 		public static final int selected_view = 0x7f040004;
-		public static final int slidingmenumain = 0x7f04006b;
-		public static final int toggle_title = 0x7f040061;
+		public static final int slidingmenumain = 0x7f04006f;
+		public static final int toggle_title = 0x7f040065;
 	}
 	public static final class layout {
 		public static final int actionbar_compat = 0x7f030000;
 		public static final int actionbar_indeterminate_progress = 0x7f030001;
-		public static final int main = 0x7f03001c;
-		public static final int slidingmenumain = 0x7f030022;
+		public static final int main = 0x7f03001d;
+		public static final int slidingmenumain = 0x7f030023;
 	}
 	public static final class string {
 		public static final int alternate_title = 0x7f070001;

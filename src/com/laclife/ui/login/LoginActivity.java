@@ -5,13 +5,21 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.Display;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupWindow;
 
 import com.laclife.ui.BaseActivity;
 import com.laclife.ui.R;
+import com.laclife.ui.products.ProductsActivity;
 
 public class LoginActivity extends BaseActivity implements TextWatcher {
 
@@ -58,9 +66,12 @@ public class LoginActivity extends BaseActivity implements TextWatcher {
 		switch (item.getItemId()) {
 		case R.id.menuProducts:
 			shortToast("Products");
+			Intent intent = new Intent(this, ProductsActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.menuContact:
 			shortToast("Contact");
+			showContactPopup(new View(this));
 			break;
 
 		default:
@@ -97,8 +108,8 @@ public class LoginActivity extends BaseActivity implements TextWatcher {
 			return;
 		}
 
-		Intent productsIntent = new Intent(this, SlidingMenuActivity.class);
-		startActivity(productsIntent);
+		Intent intent = new Intent(this, SlidingMenuActivity.class);
+		startActivity(intent);
 	}
 
 	@Override
@@ -144,6 +155,55 @@ public class LoginActivity extends BaseActivity implements TextWatcher {
 
 	@Override
 	public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+	}
+
+	// PopupWindow for Photo and Video
+	private void showContactPopup(View view) {
+
+		LayoutInflater inflater = LayoutInflater.from(this);
+		View popupView = inflater.inflate(R.layout.layout_contact_popup, null);
+		popupView.measure(View.MeasureSpec.UNSPECIFIED,
+				View.MeasureSpec.UNSPECIFIED);
+
+		Display display = getWindowManager().getDefaultDisplay();
+		int width = display.getWidth();
+		int height = popupView.getMeasuredHeight() + 10;
+
+		final PopupWindow popupWindow = new PopupWindow(popupView, width,
+				height);
+		popupWindow.showAtLocation(view, Gravity.BOTTOM, 0, 0);
+		popupWindow.setOutsideTouchable(true);
+		popupWindow.setTouchable(true);
+
+		Button btnEmailFeedback = (Button) popupView
+				.findViewById(R.id.btnEmailFeedback);
+		Button btnContactUs = (Button) popupView
+				.findViewById(R.id.btnContactUs);
+		Button btnCancel = (Button) popupView.findViewById(R.id.btnCancel);
+
+		btnEmailFeedback.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				popupWindow.dismiss();
+
+			}
+		});
+
+		btnContactUs.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				popupWindow.dismiss();
+
+			}
+		});
+
+		btnCancel.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				popupWindow.dismiss();
+			}
+		});
 
 	}
 

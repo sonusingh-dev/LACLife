@@ -12,7 +12,7 @@ public final class Constant {
 
 	public static final class Products {
 
-		public final static String NAME = "name";
+		public static final String NAME = "name";
 	}
 
 	public static final class MyLACLife {

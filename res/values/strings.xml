@@ -6,7 +6,7 @@
     
     <!-- Activity -->
     <string name="activity_home">Welcome</string>
-    <string name="activity_login">LeadwayLIFE</string>
+    <string name="activity_login">Login</string>
     <string name="activity_products">Products</string>
     <string name="activity_register">Register</string>
     <string name="activity_contacts">Contacts</string>
@@ -17,6 +17,8 @@
 
     <!-- Title -->
     <string name="title_">Title</string>
+    <string name="title_forgotten_passcode">Forgotten Passcode</string>
+    <string name="title_leadway_life">LeadwayLIFE</string>
     <string name="title_code_sent">Code Sent!</string>
     <string name="title_quote_sent">Quote Sent!</string>
     <string name="title_select_gender">Select Gender</string>
@@ -124,6 +126,9 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="menu_terms_conditions">Terms &amp; Conditions</string>
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
-    <string name="menu_logout">Logout</string>    
+    <string name="menu_logout">Logout</string>
+    <string name="title_please_enter_your">Please enter your</string>
+    <string name="title_5_digit_passcode">5-digit passcode</string>
+    <string name="title_to_login">to login</string>    
 
 </resources>

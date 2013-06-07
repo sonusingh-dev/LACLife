@@ -1,34 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/BaseLayout" >
 
-    <!--
-    <com.laclife.ui.widget.DashboardLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-
-        <Button
-            android:id="@+id/btnLogin"
-            style="@style/DashboardButton"
-            android:background="@drawable/selector_login_button" />
-
-        <Button
-            android:id="@+id/btnProducts"
-            style="@style/DashboardButton"
-            android:background="@drawable/selector_products_button" />
-
-        <Button
-            android:id="@+id/btnContact"
-            style="@style/DashboardButton"
-            android:background="@drawable/selector_contact_button" />
-
-        <Button
-            android:id="@+id/btnAboutApp"
-            style="@style/DashboardButton"
-            android:background="@drawable/selector_about_button" />
-    </com.laclife.ui.widget.DashboardLayout>
-    -->
-
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/ic_logo" />
 
 </RelativeLayout>

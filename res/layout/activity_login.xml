@@ -5,13 +5,46 @@
     android:padding="10dp" >
 
     <TextView
-        style="@style/HeaderText"
-        android:layout_marginBottom="6dp"
-        android:text="@string/title_please_enter_in_5_digit_passcode_to_login" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_leadway_life"
+        android:textColor="@color/text_primary_color"
+        android:textSize="32sp" />
+
+    <!-- Please enter your 5-digit passcode to login -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_please_enter_your" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="@string/title_5_digit_passcode"
+            android:textColor="@color/text_primary_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_to_login" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal" >
 
         <EditText
             android:id="@+id/edtPasscodeCode1"

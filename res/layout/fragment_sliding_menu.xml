@@ -20,13 +20,13 @@
         <TextView
             android:id="@+id/txtAboutUs"
             style="@style/SlidingMenuText"
-            android:drawableLeft="@drawable/ic_launcher"
+            android:drawableLeft="@drawable/ic_menu_about_us"
             android:text="@string/menu_about_us" />
 
         <TextView
             android:id="@+id/txtContactUs"
             style="@style/SlidingMenuText"
-            android:drawableLeft="@drawable/ic_launcher"
+            android:drawableLeft="@drawable/ic_menu_contact_us"
             android:text="@string/menu_contact_us" />
 
         <TextView
@@ -50,7 +50,7 @@
         <TextView
             android:id="@+id/txtMyPolicies"
             style="@style/SlidingMenuText"
-            android:drawableLeft="@drawable/ic_launcher"
+            android:drawableLeft="@drawable/ic_menu_my_policies"
             android:text="@string/menu_my_policies" />
 
         <TextView

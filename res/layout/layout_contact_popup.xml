@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupWindow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <Button
+        android:id="@+id/btnEmailFeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Feedback" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact us" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cancel" >
+    </Button>
+
+</LinearLayout>

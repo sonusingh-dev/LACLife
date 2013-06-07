@@ -8,8 +8,6 @@
         android:layout_marginBottom="6dp"
         android:text="@string/des_add_risk_to_" />
 
-    <include layout="@layout/layout_divider" />
-
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
@@ -19,6 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+
+            <include layout="@layout/layout_divider" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

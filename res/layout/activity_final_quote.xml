@@ -35,15 +35,15 @@
                     <TextView
                         android:id="@+id/textView1"
                         style="@style/SimpleTextColor"
-                        android:paddingLeft="6dip"
-                        android:paddingRight="6dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="Policy Overview" />
 
                     <TextView
                         android:id="@+id/textView2"
                         style="@style/SimpleTextColor"
-                        android:paddingLeft="6dip"
-                        android:paddingRight="6dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="TextView" />
                 </TableRow>
 
@@ -51,36 +51,43 @@
                     android:id="@+id/tableRow2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp" >
+                    android:layout_marginBottom="10dp" >
 
                     <TextView
                         android:id="@+id/textView1"
                         style="@style/SimpleTextColor"
-                        android:paddingLeft="6dip"
-                        android:paddingRight="6dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="Leadway Savings Plan" />
 
                     <TextView
                         android:id="@+id/textView2"
                         style="@style/SimpleTextColor"
-                        android:paddingLeft="6dip"
-                        android:paddingRight="6dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="TextView" />
                 </TableRow>
 
                 <TableRow
                     android:id="@+id/tableRow3"
-                    style="@style/SimpleTableRow"
-                    android:background="@drawable/bg_actionbar_compat" >
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/separator_color"
+                    android:padding="0.5dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    style="@style/SimpleTableRow" >
 
                     <TextView
                         android:id="@+id/textView1"
-                        style="@style/SimpleTextColorWhite"
+                        style="@style/SimpleTextColor"
                         android:text="Policy Details" />
 
                     <TextView
                         android:id="@+id/textView2"
-                        style="@style/SimpleTextColorWhite"
+                        style="@style/SimpleTextColor"
                         android:text="TextView" />
                 </TableRow>
 
@@ -101,8 +108,7 @@
 
                 <TableRow
                     android:id="@+id/tableRow5"
-                    style="@style/SimpleTableRow"
-                    android:background="#F8F8F8" >
+                    style="@style/SimpleTableRow" >
 
                     <TextView
                         android:id="@+id/textView1"
@@ -132,8 +138,7 @@
 
                 <TableRow
                     android:id="@+id/tableRow7"
-                    style="@style/SimpleTableRow"
-                    android:background="#F8F8F8" >
+                    style="@style/SimpleTableRow" >
 
                     <TextView
                         android:id="@+id/textView1"
@@ -148,17 +153,22 @@
 
                 <TableRow
                     android:id="@+id/tableRow8"
-                    style="@style/SimpleTableRow"
-                    android:background="@color/dark_gray" >
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" >
 
                     <TextView
                         android:id="@+id/textView1"
-                        style="@style/SimpleTextColorWhite"
+                        style="@style/SimpleTextColor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="Total" />
 
                     <TextView
                         android:id="@+id/textView2"
-                        style="@style/SimpleTextColorWhite"
+                        style="@style/SimpleTextColor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="TextView" />
                 </TableRow>
             </TableLayout>
