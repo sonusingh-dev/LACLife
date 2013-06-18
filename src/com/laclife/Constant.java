@@ -11,7 +11,6 @@ public final class Constant {
 	}
 
 	public static final class Products {
-
 		public static final String NAME = "name";
 	}
 
@@ -21,6 +20,11 @@ public final class Constant {
 
 	public static final class Registration {
 
+	}
+
+	public static final class CalculateQuote {
+		// public static final String KEY_OWNER = "owner";
+		public static final String KEY_QUOTE = "quote";
 	}
 
 }

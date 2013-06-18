@@ -12,11 +12,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.laclife.Constant.CalculateQuote;
 import com.laclife.LACLifeApplication;
+import com.laclife.model.calculatequote.CalculateQuoteModel;
 import com.laclife.ui.R;
 
 public class SavingAmountActivity extends HomeBaseActivity implements
 		OnClickListener, OnItemSelectedListener {
+
+	int cover;
+	int frequency;
 
 	private EditText edtSavings;
 
@@ -42,7 +47,7 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 		// Create an ArrayAdapter using the string array and a default spinner
 		// layout
 		ArrayAdapter<CharSequence> coverPeriodAdapter = ArrayAdapter
-				.createFromResource(this, R.array.covder_period_array,
+				.createFromResource(this, R.array.cover_period_array,
 						R.layout.simple_spinner_item);
 		ArrayAdapter<CharSequence> payFrequencyAdapter = ArrayAdapter
 				.createFromResource(this, R.array.pay_frequency_array,
@@ -73,6 +78,11 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 
 	public void onItemSelected(AdapterView<?> parent, View view, int pos,
 			long id) {
+		if (view == spnCoverPeriod) {
+			cover = pos;
+		} else if (view == spnPayFrequency) {
+			frequency = pos;
+		}
 		// An item was selected. You can retrieve the selected item using
 		// parent.getItemAtPosition(pos)
 	}
@@ -82,13 +92,26 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 	}
 
 	private void validate() {
-		if (TextUtils.isEmpty(edtSavings.getText().toString())) {
+
+		String savings = edtSavings.getText().toString();
+		if (TextUtils.isEmpty(savings)) {
 			shortToast("Please enter the desired yearly savings");
 			return;
 		}
 
-		Intent intent = new Intent(this, AddRiskActivity.class);
+		String[] coverPeriodArray = getResources().getStringArray(
+				R.array.sort_cover_period_array);
+		String[] payFrequencyArray = getResources().getStringArray(
+				R.array.sort_pay_frequency_array);
+
+		Intent intent = getIntent();
+		CalculateQuoteModel calculateQuote = (CalculateQuoteModel) intent
+				.getSerializableExtra(CalculateQuote.KEY_QUOTE);
+		calculateQuote.setMaturityYears(coverPeriodArray[cover]);
+		calculateQuote.setPremiumFrequency(payFrequencyArray[frequency]);
+
+		intent.setClass(this, AddRiskActivity.class);
+		intent.putExtra(CalculateQuote.KEY_QUOTE, calculateQuote);
 		startActivity(intent);
 	}
-
 }

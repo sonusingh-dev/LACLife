@@ -9,11 +9,11 @@ package com.laclife.ui;
 
 public final class R {
     public static final class array {
-        public static final int covder_period_array=0x7f090002;
+        public static final int cover_period_array=0x7f090002;
         public static final int gender_array=0x7f090006;
         public static final int pay_frequency_array=0x7f090004;
         public static final int products_array=0x7f090000;
-        public static final int sort_covder_period_array=0x7f090003;
+        public static final int sort_cover_period_array=0x7f090003;
         public static final int sort_gender_array=0x7f090007;
         public static final int sort_pay_frequency_array=0x7f090005;
         public static final int sort_products_array=0x7f090001;

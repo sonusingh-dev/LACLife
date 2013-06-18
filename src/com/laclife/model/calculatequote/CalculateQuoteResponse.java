@@ -2,9 +2,11 @@ package com.laclife.model.calculatequote;
 
 import java.util.List;
 
-import com.laclife.model.LifefitBaseModel;
+import com.laclife.model.BaseModel;
 
-public class CalculateQuoteResponse extends LifefitBaseModel {
+public class CalculateQuoteResponse implements BaseModel {
+
+	private static final long serialVersionUID = 1L;
 
 	private String quoteNo;
 	private List<QuoteDataModel> quoteDataList;

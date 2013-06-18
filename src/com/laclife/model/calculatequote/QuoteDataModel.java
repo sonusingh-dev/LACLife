@@ -1,6 +1,10 @@
 package com.laclife.model.calculatequote;
 
-public class QuoteDataModel {
+import com.laclife.model.BaseModel;
+
+public class QuoteDataModel implements BaseModel {
+
+	private static final long serialVersionUID = 1L;
 
 	private String name;
 	private String value;

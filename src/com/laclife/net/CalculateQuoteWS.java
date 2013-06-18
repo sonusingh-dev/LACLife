@@ -22,8 +22,8 @@ public class CalculateQuoteWS extends LifefitBaseWS {
 	private CalculateQuoteModel calculateQuote;
 	private List<CoverageDataModel> coverageDataList;
 
-	public CalculateQuoteWS() {
-
+	public CalculateQuoteWS(CalculateQuoteModel calculateQuote) {
+		this.calculateQuote = calculateQuote;
 	}
 
 	public CalculateQuoteWS(String agentNo, String premiumFrequency,
@@ -117,7 +117,7 @@ public class CalculateQuoteWS extends LifefitBaseWS {
 	}
 
 	private String formatCalculateQuote() {
-		
+
 		String request = "";
 		if (calculateQuote == null) {
 			return request;

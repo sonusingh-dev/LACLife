@@ -11,7 +11,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.laclife.Constant.CalculateQuote;
 import com.laclife.LACLifeApplication;
+import com.laclife.model.calculatequote.CalculateQuoteModel;
+import com.laclife.model.calculatequote.OwnerModel;
 import com.laclife.ui.R;
 import com.laclife.ui.dialog.DatePickerFragment;
 import com.laclife.ui.dialog.DatePickerFragment.DateSetDialogListener;
@@ -73,43 +76,59 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 
 	private void validate() {
 
-		if (TextUtils.isEmpty(edtFName.getText().toString())) {
+		String firstName = edtFName.getText().toString();
+		if (TextUtils.isEmpty(firstName)) {
 			shortToast("Please enter First Name");
 			return;
 		}
 
-		if (TextUtils.isEmpty(edtLName.getText().toString())) {
+		String lastName = edtLName.getText().toString();
+		if (TextUtils.isEmpty(lastName)) {
 			shortToast("Please enter Last Name");
 			return;
 		}
 
-		if (TextUtils.isEmpty(edtPhone.getText().toString())) {
+		String phone = edtPhone.getText().toString();
+		if (TextUtils.isEmpty(phone)) {
 			shortToast("Please enter Phone number");
 			return;
 		}
 
-		if (!Patterns.PHONE.matcher(edtPhone.getText().toString()).matches()) {
+		if (!Patterns.PHONE.matcher(phone).matches()) {
 			shortToast("Inavlide Phone Number");
 			return;
 		}
 
-		if (TextUtils.isEmpty(edtEmail.getText().toString())) {
+		String email = edtEmail.getText().toString();
+		if (TextUtils.isEmpty(email)) {
 			shortToast("Please enter Email");
 			return;
 		}
 
-		if (!Patterns.EMAIL_ADDRESS.matcher(edtEmail.getText().toString())
-				.matches()) {
+		if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 			shortToast("Inavlide Email");
 			return;
 		}
 
-		if (TextUtils.isEmpty(edtBirthday.getText().toString())) {
+		String birthDate = edtBirthday.getText().toString();
+		if (TextUtils.isEmpty(birthDate)) {
 			shortToast("Please enter Date of Birth");
 			return;
 		}
 
+		
+		OwnerModel owner = new OwnerModel();
+		owner.setFirstName(firstName);
+		owner.setLastName(lastName);
+		owner.setMobilePhoneNo(phone);
+		owner.setEmail(email);
+		owner.setBirthDate(birthDate);
+		
+		CalculateQuoteModel calculateQuote = new CalculateQuoteModel();
+		calculateQuote.setOwner(owner);
+
 		Intent intent = new Intent(this, SavingAmountActivity.class);
+		intent.putExtra(CalculateQuote.KEY_QUOTE, calculateQuote);
 		startActivity(intent);
 	}
 
