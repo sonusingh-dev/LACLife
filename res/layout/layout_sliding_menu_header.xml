@@ -5,13 +5,6 @@
     android:layout_height="@dimen/actionbar_compat_height"
     android:background="@drawable/ic_bg_slide_menu_button" >
 
-    <ImageView
-        android:id="@+id/imgUserPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="6dp"
-        android:src="@drawable/ic_menu_user_profile" />
-
     <TextView
         android:id="@+id/txtUserName"
         android:layout_width="wrap_content"
@@ -36,5 +29,14 @@
         android:text="Secondary"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:id="@+id/imgUserPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="6dp"
+        android:src="@drawable/ic_menu_user_profile" />
 
 </RelativeLayout>

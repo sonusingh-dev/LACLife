@@ -61,8 +61,8 @@ public final class R {
 		public static final int menu_refresh = 0x7f040009;
 		public static final int right = 0x7f040001;
 		public static final int selected_view = 0x7f040004;
-		public static final int slidingmenumain = 0x7f04006f;
-		public static final int toggle_title = 0x7f040065;
+		public static final int slidingmenumain = 0x7f040077;
+		public static final int toggle_title = 0x7f04006d;
 	}
 	public static final class layout {
 		public static final int actionbar_compat = 0x7f030000;

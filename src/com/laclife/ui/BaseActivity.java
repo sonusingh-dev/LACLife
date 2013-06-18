@@ -6,7 +6,6 @@ import android.widget.Toast;
 
 import com.slidingmenu.actionbar.ActionBarActivity;
 
-
 public class BaseActivity extends ActionBarActivity {
 
 	@Override
@@ -16,7 +15,7 @@ public class BaseActivity extends ActionBarActivity {
 
 	// set title for ActionBar
 	protected void setActionBarTitle(String title) {
-		// setTitle(title);
+		setTitle(title);
 	}
 
 	public void shortToast(String text) {

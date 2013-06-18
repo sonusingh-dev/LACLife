@@ -3,19 +3,17 @@
 
     <string-array name="products_array">
         <item>Leadway Savings Plan</item>
+        <item>Educational Saving Plan</item>
+        <item>Educational Target Plan</item>
         <item>Leadway Target Plan</item>
-        <item>Education Policy Product</item>
-        <item>Education Savings Plan</item>
-        <item>Leadway Family Plan</item>
-        <item>Comfort 5</item>
+        <item>Personal Saving Plan</item>
     </string-array>
     <string-array name="sort_products_array">
         <item>LSP</item>
-        <item>LTP</item>
-        <item>EPP</item>
         <item>ESP</item>
-        <item>LFP</item>
-        <item>Comfort 5</item>
+        <item>ETP</item>
+        <item>LTP</item>
+        <item>PSP</item>
     </string-array>
     <string-array name="covder_period_array">
         <item>5 years</item>
@@ -30,7 +28,7 @@
     </string-array>
     <string-array name="gender_array">
         <item>Male</item>
-        <item>Female</item>        
+        <item>Female</item>
     </string-array>
 
 </resources>

@@ -22,5 +22,10 @@ public final class Constant {
 	public static final class Registration {
 
 	}
+	
+	public static final class CalculateQuote {
+		public static final String KEY_QUOTE_NO = "quoteNo";
+		public static final String KEY_QUOTE_DATA = "quoteData";
+	}
 
 }

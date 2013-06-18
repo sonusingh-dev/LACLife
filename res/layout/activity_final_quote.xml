@@ -40,7 +40,7 @@
                         android:text="Policy Overview" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtOverview"
                         style="@style/SimpleTextColor"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
@@ -61,7 +61,7 @@
                         android:text="Leadway Savings Plan" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtPlan"
                         style="@style/SimpleTextColor"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
@@ -82,13 +82,13 @@
 
                     <TextView
                         android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="Policy Details" />
+                        android:text="Policy Details"
+                        android:textColor="@color/text_primary_color" />
 
                     <TextView
-                        android:id="@+id/textView2"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
+                        android:id="@+id/txtDetails"
+                        android:text="TextView"
+                        android:textColor="@color/text_primary_color" />
                 </TableRow>
 
                 <TableRow
@@ -101,7 +101,7 @@
                         android:text="Death Benefit" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtDeath"
                         style="@style/SimpleTextColor"
                         android:text="TextView" />
                 </TableRow>
@@ -113,10 +113,10 @@
                     <TextView
                         android:id="@+id/textView1"
                         style="@style/SimpleTextColor"
-                        android:text="Crtitical Illness Benefit" />
+                        android:text="Critical Illness Benefit" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtCritical"
                         style="@style/SimpleTextColor"
                         android:text="TextView" />
                 </TableRow>
@@ -131,7 +131,7 @@
                         android:text="TPD" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtTPD"
                         style="@style/SimpleTextColor"
                         android:text="TextView" />
                 </TableRow>
@@ -146,29 +146,24 @@
                         android:text="Risk Benefit" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtRisk"
                         style="@style/SimpleTextColor"
                         android:text="TextView" />
                 </TableRow>
 
                 <TableRow
                     android:id="@+id/tableRow8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/SimpleTableRow"
                     android:layout_marginTop="15dp" >
 
                     <TextView
                         android:id="@+id/textView1"
                         style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:text="Total" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/txtTotal"
                         style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:text="TextView" />
                 </TableRow>
             </TableLayout>
