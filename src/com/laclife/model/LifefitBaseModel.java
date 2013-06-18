@@ -1,5 +1,5 @@
 package com.laclife.model;
 
-public abstract class LifefitBaseModel {
-	
+public class LifefitBaseModel {
+
 }

@@ -1,190 +1,154 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BaseLayout"
-    android:orientation="vertical" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    style="@style/BaseLayout" >
 
-    <TextView
-        style="@style/HeaderText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/des_your_quote" />
-
-    <ScrollView
-        android:id="@+id/scrollView1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            style="@style/HeaderText"
+            android:layout_marginBottom="6dp"
+            android:text="@string/des_your_quote" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:stretchColumns="0" >
 
-            <TableLayout
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtOverview1"
+                    style="@style/SimpleTextColor"
+                    android:text="Policy Overview" />
+
+                <TextView
+                    android:id="@+id/txtOverview"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:stretchColumns="0" >
+                android:layout_marginBottom="10dp" >
 
-                <TableRow
-                    android:id="@+id/tableRow1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txtPlan1"
+                    style="@style/SimpleTextColor"
+                    android:text="Leadway Savings Plan" />
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:text="Policy Overview" />
+                <TextView
+                    android:id="@+id/txtPlan"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/txtOverview"
-                        style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:text="TextView" />
-                </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                style="@style/SimpleTableRow" >
 
-                <TableRow
-                    android:id="@+id/tableRow2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp" >
+                <TextView
+                    android:id="@+id/txtDetails1"
+                    android:text="Policy Details"
+                    android:textColor="@color/text_primary_color" />
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:text="Leadway Savings Plan" />
+                <TextView
+                    android:id="@+id/txtDetails"
+                    android:textColor="@color/text_primary_color" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/txtPlan"
-                        style="@style/SimpleTextColor"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:text="TextView" />
-                </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                style="@style/SimpleTableRow" >
 
-                <TableRow
-                    android:id="@+id/tableRow3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/separator_color"
-                    android:padding="0.5dp" />
+                <TextView
+                    android:id="@+id/txtDeath1"
+                    style="@style/SimpleTextColor"
+                    android:text="Death Benefit" />
 
-                <TableRow
-                    android:id="@+id/tableRow3"
-                    style="@style/SimpleTableRow" >
+                <TextView
+                    android:id="@+id/txtDeath"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:text="Policy Details"
-                        android:textColor="@color/text_primary_color" />
+            <TableRow
+                android:id="@+id/tableRow5"
+                style="@style/SimpleTableRow" >
 
-                    <TextView
-                        android:id="@+id/txtDetails"
-                        android:text="TextView"
-                        android:textColor="@color/text_primary_color" />
-                </TableRow>
+                <TextView
+                    android:id="@+id/txtCritical1"
+                    style="@style/SimpleTextColor"
+                    android:text="Critical Illness Benefit" />
 
-                <TableRow
-                    android:id="@+id/tableRow4"
-                    style="@style/SimpleTableRow" >
+                <TextView
+                    android:id="@+id/txtCritical"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="Death Benefit" />
+            <TableRow
+                android:id="@+id/tableRow6"
+                style="@style/SimpleTableRow" >
 
-                    <TextView
-                        android:id="@+id/txtDeath"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
-                </TableRow>
+                <TextView
+                    android:id="@+id/txtTPD1"
+                    style="@style/SimpleTextColor"
+                    android:text="TPD" />
 
-                <TableRow
-                    android:id="@+id/tableRow5"
-                    style="@style/SimpleTableRow" >
+                <TextView
+                    android:id="@+id/txtTPD"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="Critical Illness Benefit" />
+            <TableRow
+                android:id="@+id/tableRow7"
+                style="@style/SimpleTableRow" >
 
-                    <TextView
-                        android:id="@+id/txtCritical"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
-                </TableRow>
+                <TextView
+                    android:id="@+id/txtRisk1"
+                    style="@style/SimpleTextColor"
+                    android:text="Risk Benefit" />
 
-                <TableRow
-                    android:id="@+id/tableRow6"
-                    style="@style/SimpleTableRow" >
+                <TextView
+                    android:id="@+id/txtRisk"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="TPD" />
+            <TableRow
+                android:id="@+id/tableRow8"
+                style="@style/SimpleTableRow"
+                android:layout_marginTop="15dp" >
 
-                    <TextView
-                        android:id="@+id/txtTPD"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
-                </TableRow>
+                <TextView
+                    android:id="@+id/txtTotal1"
+                    style="@style/SimpleTextColor"
+                    android:text="Total" />
 
-                <TableRow
-                    android:id="@+id/tableRow7"
-                    style="@style/SimpleTableRow" >
+                <TextView
+                    android:id="@+id/txtTotal"
+                    style="@style/SimpleTextColor" />
+            </TableRow>
+        </TableLayout>
 
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="Risk Benefit" />
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/des_final_quote"
+            android:textSize="@dimen/text_size_small" />
 
-                    <TextView
-                        android:id="@+id/txtRisk"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
-                </TableRow>
+        <Button
+            android:id="@+id/btnEmail"
+            style="@style/DefaultYellowButton"
+            android:text="@string/btn_email_this_quote" />
+    </LinearLayout>
 
-                <TableRow
-                    android:id="@+id/tableRow8"
-                    style="@style/SimpleTableRow"
-                    android:layout_marginTop="15dp" >
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        style="@style/SimpleTextColor"
-                        android:text="Total" />
-
-                    <TextView
-                        android:id="@+id/txtTotal"
-                        style="@style/SimpleTextColor"
-                        android:text="TextView" />
-                </TableRow>
-            </TableLayout>
-
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/SimpleTextColor"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="@string/des_final_quote"
-                android:textSize="@dimen/text_size_small" />
-
-            <Button
-                android:id="@+id/btnEmail"
-                style="@style/DefaultYellowButton"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/btn_email_this_quote" />
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>

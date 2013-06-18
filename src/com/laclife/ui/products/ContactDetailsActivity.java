@@ -55,9 +55,9 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 	}
 
 	public void onNext(View v) {
-		Intent intent = new Intent(this, SavingAmountActivity.class);
-		startActivity(intent);
-		// validate();
+		// Intent intent = new Intent(this, SavingAmountActivity.class);
+		// startActivity(intent);
+		validate();
 	}
 
 	public void showDatePickerDialog(View v) {
@@ -109,8 +109,8 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 			return;
 		}
 
-		// Intent intent = new Intent(this, SavingAmountActivity.class);
-		// startActivity(intent);
+		Intent intent = new Intent(this, SavingAmountActivity.class);
+		startActivity(intent);
 	}
 
 	// updates the date in the TextView

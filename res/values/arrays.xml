@@ -21,14 +21,29 @@
         <item>15 years</item>
         <item>20 years</item>
     </string-array>
+    <string-array name="sort_covder_period_array">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
     <string-array name="pay_frequency_array">
-        <item>Weekly</item>
         <item>Monthly</item>
-        <item>Yearly</item>
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </string-array>
+    <string-array name="sort_pay_frequency_array">
+        <item>M</item>
+        <item>Q</item>
+        <item>A</item>
     </string-array>
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
+    </string-array>
+    <string-array name="sort_gender_array">
+        <item>M</item>
+        <item>F</item>
     </string-array>
 
 </resources>

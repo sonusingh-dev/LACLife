@@ -7,8 +7,8 @@ import java.util.List;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import com.laclife.model.CalculateQuoteResponse;
-import com.laclife.model.QuoteDataModel;
+import com.laclife.model.calculatequote.CalculateQuoteResponse;
+import com.laclife.model.calculatequote.QuoteDataModel;
 
 public class CalculateQuoteParser extends LifefitBaseParser {
 
@@ -25,7 +25,7 @@ public class CalculateQuoteParser extends LifefitBaseParser {
 			IOException {
 
 		CalculateQuoteResponse quoteResponse = new CalculateQuoteResponse();
-		List<QuoteDataModel> quoteData = new ArrayList<QuoteDataModel>();
+		List<QuoteDataModel> quoteDataList = new ArrayList<QuoteDataModel>();
 
 		String quoteNo = null;
 		XmlPullParser parser = newPullParser(response);
@@ -41,7 +41,7 @@ public class CalculateQuoteParser extends LifefitBaseParser {
 				if (tag.equals(TAG_QUOTE_NO)) {
 					quoteNo = readQuoteNo(parser);
 				} else if (tag.equals(TAG_QUOTE_DATA)) {
-					quoteData.add(readQuoteData(parser));
+					quoteDataList.add(readQuoteData(parser));
 				}
 				break;
 			case XmlPullParser.END_TAG:
@@ -51,7 +51,7 @@ public class CalculateQuoteParser extends LifefitBaseParser {
 		}
 
 		quoteResponse.setQuoteNo(quoteNo);
-		quoteResponse.setQuoteData(quoteData);
+		quoteResponse.setQuoteDataList(quoteDataList);
 		return quoteResponse;
 	}
 

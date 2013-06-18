@@ -2,6 +2,7 @@ package com.laclife.ui.products;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -64,8 +65,10 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View v) {
-		Intent intent = new Intent(this, AddRiskActivity.class);
-		startActivity(intent);
+		// Intent intent = new Intent(this, AddRiskActivity.class);
+		// startActivity(intent);
+
+		validate();
 	}
 
 	public void onItemSelected(AdapterView<?> parent, View view, int pos,
@@ -79,7 +82,13 @@ public class SavingAmountActivity extends HomeBaseActivity implements
 	}
 
 	private void validate() {
+		if (TextUtils.isEmpty(edtSavings.getText().toString())) {
+			shortToast("Please enter the desired yearly savings");
+			return;
+		}
 
+		Intent intent = new Intent(this, AddRiskActivity.class);
+		startActivity(intent);
 	}
 
 }

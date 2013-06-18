@@ -1,105 +1,99 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BaseLayout"
-    android:orientation="vertical"
-    android:padding="10dp" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    style="@style/BaseLayout" >
 
-    <TextView
-        style="@style/HeaderText"
-        android:layout_marginBottom="6dp"
-        android:text="@string/des_your_contact_details" />
-
-    <ScrollView
-        android:id="@+id/scrollView1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
 
-        <LinearLayout
+        <TextView
+            style="@style/HeaderText"
+            android:layout_marginBottom="6dp"
+            android:text="@string/des_your_contact_details" />
+
+        <EditText
+            android:id="@+id/edtFName"
+            style="@style/SimpleTextColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical" >
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/hint_first_name"
+            android:inputType="textPersonName" >
 
-            <EditText
-                android:id="@+id/edtFName"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:hint="@string/hint_first_name"
-                android:inputType="textPersonName" >
+            <requestFocus />
+        </EditText>
 
-                <requestFocus />
-            </EditText>
+        <EditText
+            android:id="@+id/edtLName"
+            style="@style/SimpleTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/hint_last_name"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/edtLName"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:ems="10"
-                android:hint="@string/hint_last_name"
-                android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/SimpleTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/hint_phone_"
+            android:inputType="phone" />
 
-            <EditText
-                android:id="@+id/edtPhone"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:ems="10"
-                android:hint="@string/hint_phone_"
-                android:inputType="phone" />
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/SimpleTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
 
-            <EditText
-                android:id="@+id/edtEmail"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:ems="10"
-                android:hint="@string/hint_email"
-                android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/edtBirthday"
+            style="@style/SimpleTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/hint_date_of_birth"
+            android:inputType="date"
+            android:onClick="showDatePickerDialog" />
 
-            <EditText
-                android:id="@+id/edtBirthday"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:ems="10"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:hint="@string/hint_date_of_birth"
-                android:inputType="date"
-                android:onClick="showDatePickerDialog" />
+        <TextView
+            android:id="@+id/txtGender"
+            style="@style/SimpleTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_spinner"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="showGenderSelectionDialog"
+            android:padding="10dp"
+            android:text="@string/btn_select_gender" />
 
-            <TextView
-                android:id="@+id/txtGender"
-                style="@style/SimpleTextColor"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/selector_spinner"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:onClick="showGenderSelectionDialog"
-                android:padding="10dp"
-                android:text="@string/btn_select_gender" />
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/DefaultYellowButton"
+            android:layout_marginTop="20dp"
+            android:onClick="onNext"
+            android:text="@string/btn_next" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/btnNext"
-                style="@style/DefaultYellowButton"
-                android:layout_marginTop="20dp"
-                android:onClick="onNext"
-                android:text="@string/btn_next" />
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>

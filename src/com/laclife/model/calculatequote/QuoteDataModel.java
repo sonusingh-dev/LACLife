@@ -1,4 +1,4 @@
-package com.laclife.model;
+package com.laclife.model.calculatequote;
 
 public class QuoteDataModel {
 

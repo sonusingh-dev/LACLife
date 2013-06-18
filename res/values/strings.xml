@@ -3,7 +3,7 @@
 
     <string name="app_name">LAC Life</string>
     <string name="action_settings">Settings</string>
-    
+
     <!-- Activity -->
     <string name="activity_home">Welcome</string>
     <string name="activity_login">Login</string>
@@ -34,6 +34,9 @@
     <string name="title_your_personal_details">Your Personal Details</string>
     <string name="title_please_confirm_that_the_details_are_correct">Please confirm that the details are correct</string>
     <string name="title_please_enter_in_5_digit_passcode_to_login">Please enter in 5 digit Passcode to Login</string>
+    <string name="title_please_enter_your">Please enter your</string>
+    <string name="title_5_digit_passcode">5-digit passcode</string>
+    <string name="title_to_login">to login</string>
 
     <!-- Button Label -->
     <string name="btn_login">LOGIN</string>
@@ -83,6 +86,7 @@
     <!-- Alert -->
     <string name="alert_code_sent">A verification code has been sent to your phone. Please enter code on the next screen</string>
     <string name="alert_quote_sent">A copy of this quote has been sent to your email address</string>
+    <string name="alert_please_wait">Please wait....</string>
 
     <!-- Description -->
     <string name="des_your_contact_details">Your contact details</string>
@@ -92,13 +96,7 @@
     <string name="des_your_quote">Your quote</string>
     <string name="des_enter_the_code_">Enter the code sent to your phone in the field below to get the quote</string>
     <string name="des_leadway_life">Leadway Life</string>
-    <string name="des_product_description">The App is for Life Business Policy Holders to check status of the policies, prior payment
-details or make a complaint to customer service section. The app can also be used by
-prospective customers to get quotes for the policies which they’re interested in.
-This document specifies the features and functionality for the app but does not include
-technical architecture information.Most of the features in the app will rely on API calls to
-Leadway’s platform using XML which Leadway will provide.
-Illustrations used in this document are wireframes and not the final designs.</string>
+    <string name="des_product_description">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
     <string name="des_final_quote">Most of the features in the app will rely on API calls to
 Leadway’s platform using XML which Leadway will provide.
 Illustrations used in this document are wireframes and not the final designs.</string>
@@ -127,8 +125,5 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
     <string name="menu_logout">Logout</string>
-    <string name="title_please_enter_your">Please enter your</string>
-    <string name="title_5_digit_passcode">5-digit passcode</string>
-    <string name="title_to_login">to login</string>    
 
 </resources>
