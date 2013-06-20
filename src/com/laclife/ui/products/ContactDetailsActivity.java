@@ -11,8 +11,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.laclife.Constant.CalculateQuote;
-import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.model.calculatequote.CalculateQuoteModel;
 import com.laclife.model.calculatequote.OwnerModel;
 import com.laclife.ui.R;
@@ -30,6 +29,8 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 
 	private int mSelectedGender = -1;
 
+	private Intent mIntent;
+
 	private EditText edtFName;
 	private EditText edtLName;
 	private EditText edtPhone;
@@ -43,8 +44,8 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_contact_details);
 
-		String product = ((LACLifeApplication) getApplication())
-				.getProductQuote();
+		mIntent = getIntent();
+		String product = mIntent.getStringExtra(Products.KEY_NAME_SORT_QUOTE);
 		setActionBarTitle(product);
 
 		edtFName = (EditText) findViewById(R.id.edtFName);
@@ -58,9 +59,8 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 	}
 
 	public void onNext(View v) {
-		// Intent intent = new Intent(this, SavingAmountActivity.class);
-		// startActivity(intent);
-		validate();
+		next(null);
+		// validate();
 	}
 
 	public void showDatePickerDialog(View v) {
@@ -116,20 +116,31 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 			return;
 		}
 
-		
 		OwnerModel owner = new OwnerModel();
 		owner.setFirstName(firstName);
 		owner.setLastName(lastName);
 		owner.setMobilePhoneNo(phone);
 		owner.setEmail(email);
 		owner.setBirthDate(birthDate);
+
+		next(owner);
+	}
+
+	private void next(OwnerModel owner) {
 		
 		CalculateQuoteModel calculateQuote = new CalculateQuoteModel();
 		calculateQuote.setOwner(owner);
 
-		Intent intent = new Intent(this, SavingAmountActivity.class);
-		intent.putExtra(CalculateQuote.KEY_QUOTE, calculateQuote);
-		startActivity(intent);
+		String className = mIntent.getStringExtra(Products.KEY_CLASS);
+
+		try {
+			Class<?> cls = Class.forName(className);
+			mIntent.setClass(this, cls);
+			mIntent.putExtra(Products.KEY_QUOTE, calculateQuote);
+			startActivity(mIntent);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
 	// updates the date in the TextView

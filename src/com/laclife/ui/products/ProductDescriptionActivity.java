@@ -9,24 +9,23 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
 public class ProductDescriptionActivity extends HomeBaseActivity implements
 		OnClickListener {
 
-	// private String product;
+	private String mProduct;
+	private String mClassName;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_product_description);
 
-		String productQuote = ((LACLifeApplication) getApplication())
-				.getProduct();
-		setActionBarTitle(productQuote);
-
-		// String product = getIntent().getStringExtra(Products.NAME);
+		mProduct = getIntent().getStringExtra(Products.KEY_NAME_SORT);
+		mClassName = getIntent().getStringExtra(Products.KEY_CLASS);
+		setActionBarTitle(mProduct);
 
 		Button btnGetQuote = (Button) findViewById(R.id.btnGetQuote);
 		Button btnMailUs = (Button) findViewById(R.id.btnMailUs);
@@ -43,6 +42,8 @@ public class ProductDescriptionActivity extends HomeBaseActivity implements
 		case R.id.btnGetQuote:
 			// ((LACLifeApplication) getApplication()).setProductQuote(product);
 			Intent intent = new Intent(this, ContactDetailsActivity.class);
+			intent.putExtra(Products.KEY_NAME_SORT_QUOTE, mProduct + " Quote");
+			intent.putExtra(Products.KEY_CLASS, mClassName);
 			startActivity(intent);
 
 			break;

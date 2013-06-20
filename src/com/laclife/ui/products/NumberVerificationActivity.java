@@ -6,19 +6,21 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
 public class NumberVerificationActivity extends HomeBaseActivity implements
 		OnClickListener {
+
+	private Intent mIntent;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_number_verification);
 
-		String product = ((LACLifeApplication) getApplication())
-				.getProductQuote();
+		mIntent = getIntent();
+		String product = mIntent.getStringExtra(Products.KEY_NAME_SORT_QUOTE);
 		setActionBarTitle(product);
 
 		Button btnGetQuote = (Button) findViewById(R.id.btnGetQuote);
@@ -28,8 +30,8 @@ public class NumberVerificationActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View view) {
-		Intent intent = new Intent(this, FinalQuoteActivity.class);
-		startActivity(intent);
+		mIntent.setClass(this, FinalQuoteActivity.class);
+		startActivity(mIntent);
 	}
 
 	private void validate() {

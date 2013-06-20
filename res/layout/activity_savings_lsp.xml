@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/HeaderText"
+        android:layout_marginBottom="6dp"
+        android:text="@string/des_tell_us_how_" />
+
+    <EditText
+        android:id="@+id/edtSavings"
+        style="@style/SimpleTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_desired_savings"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/txt_cover_period" />
+
+        <TextView
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/txt_payment_frequency" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnCoverPeriod"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_spinner"
+            android:prompt="@string/txt_cover_period" />
+
+        <Spinner
+            android:id="@+id/spnPayFrequency"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_spinner"
+            android:prompt="@string/txt_payment_frequency" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/DefaultYellowButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_next" />
+
+</LinearLayout>

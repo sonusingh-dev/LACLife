@@ -49,7 +49,27 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".products.SavingAmountActivity"
+            android:name=".products.LSPSavingActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ESPSavingActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ETPSavingActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.LTPSavingActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.PSPSavingActivity"
             android:label="@string/title_product_quote"
             android:screenOrientation="portrait" >
         </activity>

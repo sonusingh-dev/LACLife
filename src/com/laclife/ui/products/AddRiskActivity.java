@@ -10,11 +10,13 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 
-import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
 public class AddRiskActivity extends HomeBaseActivity implements
 		OnClickListener, OnCheckedChangeListener {
+
+	private Intent mIntent;
 
 	private EditText edtSumInsured1;
 	private EditText edtSumInsured2;
@@ -29,8 +31,8 @@ public class AddRiskActivity extends HomeBaseActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_risk);
 
-		String product = ((LACLifeApplication) getApplication())
-				.getProductQuote();
+		mIntent = getIntent();
+		String product = mIntent.getStringExtra(Products.KEY_NAME_SORT_QUOTE);
 		setActionBarTitle(product);
 
 		edtSumInsured1 = (EditText) findViewById(R.id.edtSumInsured1);
@@ -52,8 +54,8 @@ public class AddRiskActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View view) {
-		Intent intent = new Intent(this, NumberVerificationActivity.class);
-		startActivity(intent);
+		mIntent.setClass(this, NumberVerificationActivity.class);		
+		startActivity(mIntent);
 	}
 
 	@Override

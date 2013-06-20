@@ -125,5 +125,6 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
     <string name="menu_logout">Logout</string>
+    <string name="dscr_accidental_total_permanent_disability">Accidental Total &amp; Permanent Disability</string>
 
 </resources>

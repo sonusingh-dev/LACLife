@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/txtRiskName1"
-                android:text="@string/descri_provides_a_chosen_cash_amount_"
+                android:text="This plan comes with a standard Nim Death Cover. You may choose to increase this to a higher amount."
                 android:textSize="@dimen/text_size_small" />
 
             <TextView
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/txtRiskName2"
-                android:text="@string/descri_provides_you_with_a_chosen_cash_"
+                android:text="You may purchase additional Critical illness cover (Amount limited to the Death Sum Assured)"
                 android:textSize="@dimen/text_size_small" />
 
             <TextView
@@ -185,7 +185,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@id/txtRiskOption3"
-                android:text="@string/title_total_permanent_disablement" />
+                android:text="@string/dscr_accidental_total_permanent_disability" />
 
             <TextView
                 android:id="@+id/txtRiskDescription3"
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/txtRiskName3"
-                android:text="@string/descri_provides_you_with_a_chosen_cash_amount_"
+                android:text="You may purchase additional TPD cover (Amount limited to the Death Sum Assured)"
                 android:textSize="@dimen/text_size_small" />
 
             <TextView

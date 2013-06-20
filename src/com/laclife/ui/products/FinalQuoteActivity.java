@@ -13,7 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.laclife.LACLifeApplication;
+import com.laclife.Constant.Products;
 import com.laclife.model.calculatequote.CalculateQuoteResponse;
 import com.laclife.model.calculatequote.CoverageDataModel;
 import com.laclife.model.calculatequote.OwnerModel;
@@ -25,6 +25,8 @@ import com.laclife.ui.R;
 public class FinalQuoteActivity extends HomeBaseActivity implements
 		OnClickListener, GetDataCallBack {
 
+	private Intent mIntent;
+
 	private TextView txtOverview, txtPlan, txtDetails, txtDeath, txtCritical,
 			txtTPD, txtRisk, txtTotal;
 
@@ -32,6 +34,10 @@ public class FinalQuoteActivity extends HomeBaseActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_final_quote);
+
+		mIntent = getIntent();
+		String product = mIntent.getStringExtra(Products.KEY_NAME_SORT_QUOTE);
+		setActionBarTitle(product);
 
 		txtOverview = (TextView) findViewById(R.id.txtOverview);
 		txtPlan = (TextView) findViewById(R.id.txtPlan);
@@ -41,10 +47,6 @@ public class FinalQuoteActivity extends HomeBaseActivity implements
 		txtTPD = (TextView) findViewById(R.id.txtTPD);
 		txtRisk = (TextView) findViewById(R.id.txtRisk);
 		txtTotal = (TextView) findViewById(R.id.txtTotal);
-
-		String product = ((LACLifeApplication) getApplication())
-				.getProductQuote();
-		setActionBarTitle(product);
 
 		Button btnEmail = (Button) findViewById(R.id.btnEmail);
 		btnEmail.setOnClickListener(this);
