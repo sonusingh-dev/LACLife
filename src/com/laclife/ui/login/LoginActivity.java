@@ -40,11 +40,6 @@ public class LoginActivity extends BaseActivity implements TextWatcher {
 		edtPasscodeCode4 = (EditText) findViewById(R.id.edtPasscodeCode4);
 		edtPasscodeCode5 = (EditText) findViewById(R.id.edtPasscodeCode5);
 
-		// InputMethodManager imm = (InputMethodManager)
-		// getSystemService(Context.INPUT_METHOD_SERVICE);
-		// imm.showSoftInput(edtPasscodeCode1,
-		// InputMethodManager.SHOW_IMPLICIT);
-
 		edtPasscodeCode1.addTextChangedListener(this);
 		edtPasscodeCode2.addTextChangedListener(this);
 		edtPasscodeCode3.addTextChangedListener(this);

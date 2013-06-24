@@ -110,7 +110,7 @@ public class ESPSavingActivity extends HomeBaseActivity implements
 		calculateQuote.setMaturityYears(coverPeriodArray[cover]);
 		calculateQuote.setPremiumFrequency(payFrequencyArray[frequency]);
 
-		mIntent.setClass(this, AddRiskActivity.class);
+		mIntent.setClass(this, ESPAddRiskActivity.class);
 		mIntent.putExtra(Products.KEY_QUOTE, calculateQuote);
 		startActivity(mIntent);
 	}

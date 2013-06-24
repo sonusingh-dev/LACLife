@@ -30,7 +30,7 @@ public class NumberVerificationActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View view) {
-		mIntent.setClass(this, FinalQuoteActivity.class);
+		mIntent.setClass(this, LSPFinalQuoteActivity.class);
 		startActivity(mIntent);
 	}
 

@@ -49,13 +49,13 @@ public class BaseActivity extends ActionBarActivity implements OnCancelListener 
 	}
 
 	public void showProgressDialog() {
-		mProgressDialog = ProgressDialog.show(this,
-				getString(R.string.alert_please_wait), "", false, true, this);
+		mProgressDialog = ProgressDialog.show(this, "",
+				getString(R.string.alert_please_wait), false, true, this);
 	}
 
 	public void showProgressDialog(String title) {
-		mProgressDialog = ProgressDialog.show(this, title, "", false, true,
-				this);
+		mProgressDialog = ProgressDialog.show(this, title,
+				getString(R.string.alert_please_wait), false, true, this);
 	}
 
 	public void showProgressDialog(String title, String message) {

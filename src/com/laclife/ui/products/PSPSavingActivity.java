@@ -109,7 +109,7 @@ public class PSPSavingActivity extends HomeBaseActivity implements
 		calculateQuote.setMaturityYears(coverPeriodArray[cover]);
 		calculateQuote.setPremiumFrequency(payFrequencyArray[frequency]);
 
-		intent.setClass(this, AddRiskActivity.class);
+		intent.setClass(this, PSPAddRiskActivity.class);
 		intent.putExtra(Products.KEY_QUOTE, calculateQuote);
 		startActivity(intent);
 	}

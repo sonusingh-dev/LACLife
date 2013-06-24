@@ -67,8 +67,8 @@ public final class R {
 	public static final class layout {
 		public static final int actionbar_compat = 0x7f030000;
 		public static final int actionbar_indeterminate_progress = 0x7f030001;
-		public static final int main = 0x7f030025;
-		public static final int slidingmenumain = 0x7f03002b;
+		public static final int main = 0x7f03002a;
+		public static final int slidingmenumain = 0x7f030030;
 	}
 	public static final class string {
 		public static final int alternate_title = 0x7f070001;

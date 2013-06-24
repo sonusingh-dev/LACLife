@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    style="@style/BaseLayout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_marginBottom="6dp"
+            android:text="@string/des_your_quote" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtOverview1"
+                    style="@style/SimpleTextColor"
+                    android:text="Premium Payable" />
+
+                <TextView
+                    android:id="@+id/txtOverview"
+                    style="@style/SimpleTextColor"
+                    android:text="N25,000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtPlan1"
+                    style="@style/SimpleTextColor"
+                    android:text="Payment frequency" />
+
+                <TextView
+                    android:id="@+id/txtPlan"
+                    style="@style/SimpleTextColor"
+                    android:text="Monthly" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtOverview1"
+                    style="@style/SimpleTextColor"
+                    android:text="Tenure in years" />
+
+                <TextView
+                    android:id="@+id/txtOverview"
+                    style="@style/SimpleTextColor"
+                    android:text="15" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Should you die before the maturity date, Leadway shall pay your named beneficies Nooo,ooo on death and maturity amounts as described above without need to pay any further premium."
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Should you fall Critically ill (as described in the policy), Leadway shall pay you Nooo,ooo and additionally the maturity amounts due described above without need to pay any further premium."
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/SimpleTextColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Should you die while Critically ill (as described in the policy), Leadway shall pay an additional Nooo,ooo to your named beneficiaries and the maturity amounts due as described above without need to pay any further premium."
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:id="@+id/btnEmail"
+            style="@style/DefaultYellowButton"
+            android:text="@string/btn_email_this_quote" />
+    </LinearLayout>
+
+</ScrollView>

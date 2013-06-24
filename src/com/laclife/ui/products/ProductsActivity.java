@@ -14,14 +14,9 @@ import com.laclife.ui.R;
 public class ProductsActivity extends HomeBaseActivity implements
 		OnItemClickListener {
 
-	private static final int LSP = 0;
-	private static final int ESP = 1;
-	private static final int ETP = 2;
-	private static final int LTP = 3;
-	private static final int PSP = 4;
-
 	private String[] mProducts;
 	private String[] mSortProducts;
+	private String[] mSavingsClass;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +26,8 @@ public class ProductsActivity extends HomeBaseActivity implements
 		mProducts = getResources().getStringArray(R.array.products_array);
 		mSortProducts = getResources().getStringArray(
 				R.array.sort_products_array);
+		mSavingsClass = getResources().getStringArray(
+				R.array.savings_class_array);
 
 		ListView listView = (ListView) findViewById(R.id.listView);
 		listView.setAdapter(new ArrayAdapter<String>(this,
@@ -43,37 +40,10 @@ public class ProductsActivity extends HomeBaseActivity implements
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 
-		String className = null;
-		switch (position) {
-		case LSP:
-			className = "LSPSavingActivity";
-
-			break;
-		case ESP:
-			className = "ESPSavingActivity";
-
-			break;
-		case ETP:
-			className = "ETPSavingActivity";
-
-			break;
-		case LTP:
-			className = "LTPSavingActivity";
-
-			break;
-		case PSP:
-			className = "PSPSavingActivity";
-
-			break;
-
-		default:
-			break;
-		}
-
 		Intent intent = new Intent(this, ProductDescriptionActivity.class);
-		intent.putExtra(Products.KEY_CLASS, Products.PACKAGE + className);
 		intent.putExtra(Products.KEY_NAME, mProducts[position]);
 		intent.putExtra(Products.KEY_NAME_SORT, mSortProducts[position]);
+		intent.putExtra(Products.KEY_CLASS, mSavingsClass[position]);
 		startActivity(intent);
 	}
 }

@@ -13,7 +13,7 @@ import android.widget.EditText;
 import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
-public class AddRiskActivity extends HomeBaseActivity implements
+public class ESPAddRiskActivity extends HomeBaseActivity implements
 		OnClickListener, OnCheckedChangeListener {
 
 	private Intent mIntent;
@@ -29,7 +29,7 @@ public class AddRiskActivity extends HomeBaseActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_add_risk_lsp);
+		setContentView(R.layout.activity_add_risk_esp);
 
 		mIntent = getIntent();
 		String product = mIntent.getStringExtra(Products.KEY_NAME_SORT_QUOTE);
@@ -54,7 +54,7 @@ public class AddRiskActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View view) {
-		mIntent.setClass(this, NumberVerificationActivity.class);		
+		mIntent.setClass(this, ESPFinalQuoteActivity.class);
 		startActivity(mIntent);
 	}
 

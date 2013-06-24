@@ -45,13 +45,13 @@ public class BaseFragment extends Fragment implements OnCancelListener {
 	}
 
 	public void showProgressDialog() {
-		mProgressDialog = ProgressDialog.show(getActivity(),
-				getString(R.string.alert_please_wait), "", false, true, this);
+		mProgressDialog = ProgressDialog.show(getActivity(), "",
+				getString(R.string.alert_please_wait), false, true, this);
 	}
 
 	public void showProgressDialog(String title) {
-		mProgressDialog = ProgressDialog.show(getActivity(), title, "", false,
-				true, this);
+		mProgressDialog = ProgressDialog.show(getActivity(), title,
+				getString(R.string.alert_please_wait), false, true, this);
 	}
 
 	public void showProgressDialog(String title, String message) {

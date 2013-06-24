@@ -127,11 +127,13 @@ public class ContactDetailsActivity extends HomeBaseActivity implements
 	}
 
 	private void next(OwnerModel owner) {
-		
+
 		CalculateQuoteModel calculateQuote = new CalculateQuoteModel();
 		calculateQuote.setOwner(owner);
 
-		String className = mIntent.getStringExtra(Products.KEY_CLASS);
+		// class name with path
+		String className = Products.PACKAGE
+				+ mIntent.getStringExtra(Products.KEY_CLASS);
 
 		try {
 			Class<?> cls = Class.forName(className);

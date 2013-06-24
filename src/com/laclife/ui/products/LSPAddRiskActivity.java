@@ -13,7 +13,7 @@ import android.widget.EditText;
 import com.laclife.Constant.Products;
 import com.laclife.ui.R;
 
-public class AddRiskActivity extends HomeBaseActivity implements
+public class LSPAddRiskActivity extends HomeBaseActivity implements
 		OnClickListener, OnCheckedChangeListener {
 
 	private Intent mIntent;
@@ -54,7 +54,7 @@ public class AddRiskActivity extends HomeBaseActivity implements
 
 	@Override
 	public void onClick(View view) {
-		mIntent.setClass(this, NumberVerificationActivity.class);		
+		mIntent.setClass(this, NumberVerificationActivity.class);
 		startActivity(mIntent);
 	}
 

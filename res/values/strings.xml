@@ -89,6 +89,7 @@
     <string name="alert_please_wait">Please wait....</string>
 
     <!-- Description -->
+    <string name="dscr_accidental_total_permanent_disability">Accidental Total &amp; Permanent Disability</string>
     <string name="des_your_contact_details">Your contact details</string>
     <string name="des_tell_us_how_">Tell us how much you wish to save</string>
     <string name="des_add_risk_to_">Add a risk to your plan</string>
@@ -113,6 +114,13 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="descri_enter_the_mobile_number_">Enter the mobile number you&amp;apos;d like to link to Leadway LIFE Mobile</string>
     <string name="descri_enter_your_email_address_and_a_policy_">Enter your email address and a policy number from one of your life policies</string>
     <string name="descri_please_enter_your_full_">Please enter your full name and date of birth</string>
+    <string name="dscr_esp_risk_description_1">This plan comes with a standard Nim Death Cover. You may choose to increase this to a higher amount.</string>
+    <string name="dscr_esp_risk_description_2">You may purchase additional Critical illness cover (Amount limited to the Death Sum Assured)</string>
+    <string name="dscr_esp_risk_description_3">You may purchase additional TPD cover (Amount limited to the Death Sum Assured)</string>
+    <string name="dscr_etp_risk_description_1">This policy pays the maturity amount in the event of death. We can extend the cover to pay the Maturity amount earlier if you are Critically ill. State here if you want to extend this cover.</string>
+    <string name="dscr_etp_risk_description_2">As in the Critical illness cover, state here if you want cover against Total &amp;amp; Permanent Disability following an Accident and Maturity amount paid earlier in such event.</string>
+    <string name="dscr_psp_risk_description_1">Our death cover on this policy is half of the savings balance subject to a maximum of Nimillion. Do you wish to purchase a higher cover?</string>
+    <string name="dscr_psp_risk_description_2">Provides you with a chosen cash amount if you cannot return to work due to accidental Total &amp;amp; Permanent injury.</string>
 
     <!-- Menu -->
     <string name="menu_direct_debit">Direct Debit</string>
@@ -125,6 +133,5 @@ Illustrations used in this document are wireframes and not the final designs.</s
     <string name="menu_change_password">Change Password</string>
     <string name="menu_my_policies">My Policies</string>
     <string name="menu_logout">Logout</string>
-    <string name="dscr_accidental_total_permanent_disability">Accidental Total &amp; Permanent Disability</string>
 
 </resources>

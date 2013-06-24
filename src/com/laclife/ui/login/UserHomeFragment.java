@@ -17,7 +17,7 @@ public class UserHomeFragment extends BaseFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.activity_add_risk, container,
+		View view = inflater.inflate(R.layout.activity_add_risk_lsp, container,
 				false);
 
 		return view;

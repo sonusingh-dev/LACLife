@@ -24,9 +24,11 @@ public class GetDataTask extends AsyncTask<String, Void, Object> {
 				.executeHttpSOAP(params[0], params[1]);
 		try {
 			return mParser.parseResponse(response);
-		} catch (XmlPullParserException e) {			
+		} catch (XmlPullParserException e) {
 			e.printStackTrace();
-		} catch (IOException e) {			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 

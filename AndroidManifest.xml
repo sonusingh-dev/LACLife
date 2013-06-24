@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -79,17 +79,57 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".products.LSPAddRiskActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ESPAddRiskActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ETPAddRiskActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.PSPAddRiskActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".products.NumberVerificationActivity"
             android:label="@string/title_product_quote"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".products.FinalQuoteActivity"
+            android:name=".products.LSPFinalQuoteActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ESPFinalQuoteActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.ETPFinalQuoteActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.LTPFinalQuoteActivity"
+            android:label="@string/title_product_quote"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".products.PSPFinalQuoteActivity"
             android:label="@string/title_product_quote"
             android:screenOrientation="portrait" >
         </activity>
 
-        <!-- Products -->
+        <!-- Registration -->
         <activity
             android:name=".registration.RegisterActivity"
             android:label="@string/activity_register"

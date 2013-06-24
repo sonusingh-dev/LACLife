@@ -104,13 +104,13 @@ public class LSPSavingActivity extends HomeBaseActivity implements
 				R.array.sort_cover_period_array);
 		String[] payFrequencyArray = getResources().getStringArray(
 				R.array.sort_pay_frequency_array);
-		
+
 		CalculateQuoteModel calculateQuote = (CalculateQuoteModel) mIntent
 				.getSerializableExtra(Products.KEY_QUOTE);
 		calculateQuote.setMaturityYears(coverPeriodArray[cover]);
 		calculateQuote.setPremiumFrequency(payFrequencyArray[frequency]);
 
-		mIntent.setClass(this, AddRiskActivity.class);
+		mIntent.setClass(this, LSPAddRiskActivity.class);
 		mIntent.putExtra(Products.KEY_QUOTE, calculateQuote);
 		startActivity(mIntent);
 	}

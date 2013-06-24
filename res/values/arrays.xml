@@ -15,6 +15,13 @@
         <item>LTP</item>
         <item>PSP</item>
     </string-array>
+    <string-array name="savings_class_array">
+        <item>LSPSavingActivity</item>
+        <item>ESPSavingActivity</item>
+        <item>ETPSavingActivity</item>
+        <item>LTPSavingActivity</item>
+        <item>PSPSavingActivity</item>
+    </string-array>
     <string-array name="cover_period_array">
         <item>5 years</item>
         <item>10 years</item>
